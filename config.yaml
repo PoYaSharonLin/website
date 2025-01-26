@@ -8,7 +8,7 @@ params:
   description: Website title
   copyright: >-
     powered by [hugo](https://gohugo.io/) & deployed on
-    [Cloudflare](https://www.cloudflare.com/)
+    [GitHub Pages](https://pages.github.com/)
   theme:
     mainTheme: dark
     showAttribute: true
@@ -24,34 +24,34 @@ params:
               <link rel="shortcut icon" href="favicon.ico">
 
   profile:
-    name: "First Last, Abbr."
-    tagline: Title
-    location: "City Name, ST"
+    name: "Po-Ya, Lin"
+    # tagline: "National Tsing Hua University"
+    location: "Hsin Chu, Taiwan"
     photo: profile.jpg
   social:
     title: Links
     list:
-      - icon: fab fa-linkedin-in
-        url: "#"
-        title: LinkedIn
-      - icon: fab fa-stack-overflow
-        url: "#"
-        title: StackOverflow
+      # - icon: fab fa-linkedin-in
+      #   url: "#"
+      #   title: LinkedIn
+      # - icon: fab fa-stack-overflow
+      #   url: "#"
+      #   title: StackOverflow
       - icon: fab fa-github
-        url: "#"
+        url: "https://github.com/PoYaSharonLin"
         title: GitHub
-      - icon: fab fa-twitter
-        url: "#"
-        title: Twitter
+      # - icon: fab fa-twitter
+      #   url: "#"
+      #   title: Twitter
       - icon: fab fa-orcid
-        url: "#"
+        url: "https://orcid.org/0009-0002-7468-1526"
         title: Orcid
-      - icon: ai ai-google-scholar
-        url: "#"
-        title: Google Scholar
-      - icon: fab fa-researchgate
-        url: "#"
-        title: ResearchGate
+      # - icon: ai ai-google-scholar
+      #   url: "#"
+      #   title: Google Scholar
+      # - icon: fab fa-researchgate
+      #   url: "#"
+      #   title: ResearchGate
   showInAccordion:
     - item: aboutme
       expand: true
@@ -64,107 +64,108 @@ params:
   aboutme:
     title: About Me
     icon: fas fa-user
-    description: This is a demo of the `aafu` theme. It has `light` and `dark` theme.
+    description: This is Po-Ya, Lin, an anthusiatic computational linguistics. 
   experience:
     title: Experiences
     icon: fas fa-briefcase
     list:
-      - position: Job Title
-        dates: 2019 - *Present*
-        company: Company Name
+      - position: Customer Support AI Chat Intern
+        dates: 2022/07 - 2022/09
+        company: Hotai Motor
         details: |1-
-          - Printed from desktop. Sent [emails](#).
-              - Called people *using* telephone.
-          - Drank water from office cooler.
-          - Ate donuts on people's birthdays.
-      - position: Job Title
-        dates: 2018 - 2019
-        url: "#"
-        company: Company Name
+          - AI Chatbot model performance improved from **95\% to 97\%** after utilizing the following adjustments
+          - Broaden the roots and deepen the children nodes by adding new keywords and multi-condition.
+          - Improve complaint detection by retraining customers' requests about the frequent malfunction of components
+      # - position: Job Title
+      #   dates: 2018 - 2019
+      #   url: "#"
+      #   company: Company Name
   education:
     title: Education
     icon: fas fa-graduation-cap
     list:
-      - degree: Ph.D. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: M.S. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: B.S. in Subject
-        college: University of State-City
-        dates: 2004 - 2009
-  publication:
-    title: Publications
-    icon: fas fa-book
-    format:
-      - date
-      - title
-      - authors
-      - journal
-    types:
-      - Journal Articles
-      - Proceedings
-    list:
-      - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Journal Articles
-      - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Journal Articles
-      - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Proceedings
+      # - degree: Ph.D. in Subject
+      #   college: University of State-City
+      #   dates: 2013 - 2018
+      #   thesis_title: "Effect of humans on other humans: a study of human behavior."
+      #   thesis_url: "#"
+      - degree: M.S. in Technology Management
+        college: National Tsing Hua University
+        dates: 2024 - Current 
+        # thesis_title: "Effect of humans on other humans: a study of human behavior."
+        # thesis_url: "#"
+      - degree: B.S. in Foreign Language and Literature 
+        college: National Cheng Kung University
+        dates: 2019 - 2024
+        thesis_title: "Hybrid Electric Vehicle Sales Prediction: Using ANN, ANFIS, and Electronic Word of Mouth"
+        thesis_url: "https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"
+  # publication:
+  #   title: Publications
+  #   icon: fas fa-book
+  #   format:
+  #     - date
+  #     - title
+  #     - authors
+  #     - journal
+  #   types:
+  #     - Journal Articles
+  #     - Proceedings
+  #   list:
+  #     - title: >-
+  #         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  #         eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  #       authors: "F Last, F Second, P secondary"
+  #       date: "2018"
+  #       journal: "Journal of Field 52 (16), 9033-9044"
+  #       url: "#"
+  #       type: Journal Articles
+  #     - title: >-
+  #         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  #         eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  #       authors: "F Last, F Second, P secondary"
+  #       date: "2018"
+  #       journal: "Journal of Field 52 (16), 9033-9044"
+  #       url: "#"
+  #       type: Journal Articles
+  #     - title: >-
+  #         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  #         eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  #       authors: "F Last, F Second, P secondary"
+  #       date: "2018"
+  #       journal: "Journal of Field 52 (16), 9033-9044"
+  #       url: "#"
+  #       type: Proceedings
   project:
     title: Projects
     icon: fas fa-project-diagram
     list:
-      - title: Project 1
-        url: "#"
-        description: Description of the project
-      - title: Project 2
-        url: "#"
-        description: Description of the project
-      - title: Project 3
-        url: "#"
-        description: Description of the project
-      - title: Project 4
-        url: "#"
-        description: Description of the project
+      - title: Electronic Direct Mail Precision Marketing
+        url: "https://drive.google.com/file/d/1ZYTvsvyhrtboKDprvE_tktB-VFKohbBz/view?usp=sharing"
+        description: Used XGBoost to predict whether a user will un-subscribe, especially based on email domain and the app used and generate feature importance
+        # Applied BERT to generate the possibility of being un-subscribed and used SMOTE to handle data imbalance
+      - title: Satellite Cloud Image prediction using ConvLSTM
+        url: "https://drive.google.com/file/d/1sH8mLJBQgHYu6ajCrAUo0TlqGPwIRViq/view"
+        description: The project Apply ConLSTM to predict the movement of the infrared cloud image and use MAE, MSE, SSIM, PSNR as performance evaluation. Compared to ConLSTM, Self-attention LSTM may not be as effective as expected due to the characteristics of cloud cluster movement. (only moves around one specific local area at 10-minute intervals.)
+      # - title: Project 3
+      #   url: "#"
+      #   description: Description of the project
+      # - title: Project 4
+      #   url: "#"
+      #   description: Description of the project
   skill:
     title: Skills
     panelId: skill-panel
     icon: fas fa-cogs
     list:
-      - skill: "Skill 1, Skill 2"
+      - skill: "Python"
         skillrating: 90
-      - skill: Skill 3
+      - skill: Hugo(Go)
         skillrating: 80
-      - skill: Skill 4
+      - skill: NextJS(Typescript)
         skillrating: 50
   hobby:
     title: Hobbies
     icon: fas fa-gamepad
     list:
       - hobby: Cooking
-      - hobby: Hiking
       - hobby: Baking
