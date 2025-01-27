@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>aafu theme on </title>
+    <title>Personal Website on </title>
     <link>https://poyasharonlin.github.io/website/blog/</link>
-    <description>Recent content in aafu theme on </description>
+    <description>Recent content in Personal Website on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personal website using Hugo &amp; GitHub Pages</title>
+      <link>https://poyasharonlin.github.io/website/blog/post_3/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://poyasharonlin.github.io/website/blog/post_3/</guid>
+      <description>This blog is for people who would like to use Hugo template to build personal website instead of for those who would like to build their own Hugo template. Thus, the blog would not cover too much of Go. Rather, the focus is on understanding the routing logic.
+01 Why Hugo &amp;amp; GitHub Pages I used Hugo simply because the template of Hugo is prettier compared to that of Jekyll. GitHub pages is a great option for hosting static websites because it&amp;rsquo;s free and easy to use.</description>
+    </item>
+    
     <item>
       <title>Demo Page</title>
       <link>https://poyasharonlin.github.io/website/blog/markdown_syntax/</link>
@@ -14,15 +24,6 @@
       
       <guid>https://poyasharonlin.github.io/website/blog/markdown_syntax/</guid>
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>luctus enim ultricies auctor pulvinar nam etiam</title>
-      <link>https://poyasharonlin.github.io/website/blog/post_3/</link>
-      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://poyasharonlin.github.io/website/blog/post_3/</guid>
-      <description>donec lacinia eleifend sem a Pulvinar tempor ultrices amet praesent aliquet non magnis euismod elit venenatis. Aliqua consequat tristique erat nulla sit risus aliqua posuere. Potenti natoque augue proin accimsan risus scelerisque id integer curabitur mattis amet quisque. Aliquet porta sit sapien natoque sed fringilla, madssa suspendisse vivamus placerat sociis condimentum ridiculus. Natoque egestas non lectus pellentesque nunc mattis eu ridiculus pretium maecenas ligula. Gravida facilisis sem mollis sagittis aliquet ornare bibendum, leo nec morbi tortor diam maecenas tempor.</description>
     </item>
     
   </channel>

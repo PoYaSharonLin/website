@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>https://poyasharonlin.github.io/website/</link>
-    <description>Recent content on </description>
+    <title>application on </title>
+    <link>https://poyasharonlin.github.io/website/categories/application/</link>
+    <description>Recent content in application on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/categories/application/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Personal website using Hugo &amp; GitHub Pages</title>
       <link>https://poyasharonlin.github.io/website/blog/post_3/</link>
@@ -15,15 +15,6 @@
       <guid>https://poyasharonlin.github.io/website/blog/post_3/</guid>
       <description>This blog is for people who would like to use Hugo template to build personal website instead of for those who would like to build their own Hugo template. Thus, the blog would not cover too much of Go. Rather, the focus is on understanding the routing logic.
 01 Why Hugo &amp;amp; GitHub Pages I used Hugo simply because the template of Hugo is prettier compared to that of Jekyll. GitHub pages is a great option for hosting static websites because it&amp;rsquo;s free and easy to use.</description>
-    </item>
-    
-    <item>
-      <title>Demo Page</title>
-      <link>https://poyasharonlin.github.io/website/blog/markdown_syntax/</link>
-      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://poyasharonlin.github.io/website/blog/markdown_syntax/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -29,7 +29,7 @@
   
     
   
-  <link href="/website/main.min.5b842fdb4bdac5d9b70a45871b345485237828bcbb3289766fb253bb8ff944af.css" rel="stylesheet" />
+  <link href="/website/main.min.510718170719eba825b5b270efb8516658fe0745284d8166ab1fdfb2b564b7d8.css" rel="stylesheet" />
 
   <script>
     let html = document.querySelector("html");
@@ -110,32 +110,80 @@
     <main class="grow">
 <div class="prose prose-stone dark:prose-invert max-w-none">
 <div class="mb-3">
-  <h1 class="top-h1" style="font-size: 2.75em">luctus enim ultricies auctor pulvinar nam etiam</h1>
-  <p class="mb-1">January 6, 2018</p>
+  <h1 class="top-h1" style="font-size: 2.75em">Personal website using Hugo &amp; GitHub Pages</h1>
+  <p class="mb-1">January 26, 2025</p>
   <p>&mdash;</p>
 </div>
 <div class="content">
-  <h2 id="donec-lacinia-eleifend-sem-a">donec lacinia eleifend sem a</h2>
-<p>Pulvinar tempor ultrices amet praesent aliquet non magnis euismod elit venenatis. Aliqua consequat tristique erat nulla sit risus aliqua posuere. Potenti natoque augue proin accimsan risus scelerisque id integer curabitur mattis amet quisque. Aliquet porta sit sapien natoque sed fringilla, madssa suspendisse vivamus placerat sociis condimentum ridiculus. Natoque egestas non lectus pellentesque nunc mattis eu ridiculus pretium maecenas ligula. Gravida facilisis sem mollis sagittis aliquet ornare bibendum, leo nec morbi tortor diam maecenas tempor.</p>
-<p>Natoque ipsum ac purus mi tempus facilisis suspendisse consectetur duis interdum. Potenti vel accimsan fringilla vestibulum neque odio, lacinia duis facilisi turpis consectetur sollicitudin eleifend. Netus posuere et aliquet mauris lacinia habitant lacus imperdiet. Mollis auctor facilisi commodo maecenas condimentum convallis, pretium in consequat velit vel ipsum posuere. Est mollis imperdiet proin vel iaculis aliquam lorem, nibh mattis magna commodo consequat convallis volutpat. Vel gravida purus sagittis nunc netus aliquam quis facilisi magnis.</p>
-<p>Sapien tellus lobortis felis pulvinar ut vulputate adipiscing nisi leo vitae. Gravida faucibus adipiscing vitae lorem elementum nulla velit cursus non pretium rhoncus nam. Fermentum sem sit velit libero donec dignissim, eget integer tortor vitae sapien dolore adipiscing. Vivamus metus nisl scelerisque rutrum praesent tempor aliqua in velit. Erat auctor fames mus mi pulvinar nulla porta rhoncus. Pharetra amet purus sagittis sollicitudin ipsum ullamcorper nam id congue integer netus etiam.</p>
+  <p>This blog is for people who would like to use Hugo template to build personal website instead of for those who would like to build their own Hugo template. Thus, the blog would not cover too much of Go. Rather, the focus is on understanding the routing logic.</p>
+<h2 id="01-why-hugo--github-pages">01 Why Hugo &amp; GitHub Pages</h2>
+<p>I used Hugo simply because the template of Hugo is prettier compared to that of Jekyll. GitHub pages is a great option for hosting static websites because it&rsquo;s free and easy to use.</p>
+<h2 id="02-pre-build">02 Pre-build</h2>
+<p>It is suggested to watch the playlist before you start using the Hugo template: <!-- raw HTML omitted -->
+<a href="https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3">Hugo - Static Site Generator | Tutorial</a></p>
+<p>Though the playlist is a bit old, most of the steps are still applicable, especially for roughly understanding the Hugo framework.</p>
+<h2 id="03-build">03 Build</h2>
+<p>To understand why the steps are in this sequence, we need to understand the process of how hugo build the website. For detailed please refer to this <a href="https://chatgpt.com/share/679b7643-3430-8000-af10-14845f39f91f">ChatGPT conversation</a></p>
+<p>For those who are not familiar with Hugo template (people like me), it is not suggested to change the file structure system directly. Following steps are presented to create a personal website quickly and gradually learn the Hugo framework along the way.</p>
+<h3 id="1-edit-the-configuration-file"><strong>1. Edit the Configuration File</strong></h3>
+<pre tabindex="0"><code>Location: config.yaml
+Content: baseURL: https://GITHUB_NAME.github.io/REPO_NAME
+</code></pre><p>Locate the main configuration file (config.toml, _config.yml, or similar).
+Update the baseURL or the routing settings for the blog. As I am using GitHub pages, the baseURL is set to <code>https://GITHUB_NAME.github.io/REPO_NAME</code>.</p>
+<h3 id="2-edit-frontmatter-in-markdown-files"><strong>2. Edit Frontmatter in Markdown Files</strong></h3>
+<p>Start with _index.md. to edit the frontMatter and the content.</p>
+<ol start="3">
+<li>
+<p>Update Templates</p>
+</li>
+<li>
+<p>Build the Website</p>
+</li>
+</ol>
+<p><code>hugo -v</code>: Shows verbose output (detailed logs).
+<code>hugo --help</code>: Shows available commands and options.
+<code>hugo --minify</code>: Minifies the generated HTML and assets.
+<code>hugo -D</code>: Includes drafts in the build.</p>
+<p>If the routing requires changes to templates, edit the relevant HTML files:</p>
+<p>layouts/_default/list.html for the blog list.</p>
+<p>layouts/_default/single.html for individual posts.</p>
+<p>Adjust links and references to match the new routes.</p>
+<ol start="6">
+<li>Rebuild the Website</li>
+</ol>
+<p>Run the appropriate command to regenerate the site:</p>
+<p>Hugo: hugo</p>
+<p>Jekyll: jekyll build</p>
+<p>This ensures the new routes take effect.</p>
+<ol start="7">
+<li>Test the Changes</li>
+</ol>
+<p>Preview the site locally:</p>
+<p>Hugo: hugo server</p>
+<p>Jekyll: bundle exec jekyll serve</p>
+<p>Check the routing paths to ensure they work correctly.</p>
+<ol start="8">
+<li>Deploy the Changes</li>
+</ol>
+<p>Push the updated files to your hosting platform (e.g., GitHub Pages, Netlify).</p>
+<p>Let me know if you can share details about the framework you&rsquo;re using, and I can provide more tailored instructions.</p>
 
 </div>
 </div>
 <div class="flex flex-row justify-around my-2">
   <h3 class="mb-1 mt-1 text-left mr-4">
     
-    <i class="text-gray-300 dark:text-gray-600 fas fa-chevron-circle-left"></i>
-    
-  </h3>
-  <h3 class="mb-1 mt-1 text-left ml-4">
-    
     <a
       href="/website/blog/markdown_syntax/"
       title="Demo Page"
     >
-      <i class="nav-menu fas fa-chevron-circle-right"></i>
+      <i class="nav-menu fas fa-chevron-circle-left"></i>
     </a>
+    
+  </h3>
+  <h3 class="mb-1 mt-1 text-left ml-4">
+    
+    <i class="text-gray-300 dark:text-gray-600 fas fa-chevron-circle-right"></i>
     
   </h3>
 </div>
@@ -144,7 +192,7 @@
     </main>
     
     <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  py-6 ">
-  <p class="markdownify">powered by <a href="https://gohugo.io/">hugo</a> &amp; deployed on <a href="https://www.cloudflare.com/">Cloudflare</a></p>
+  <p class="markdownify">powered by <a href="https://gohugo.io/">hugo</a> &amp; deployed on <a href="https://pages.github.com/">GitHub Pages</a></p>
   <p >
     <i>
       <a href="https://github.com/darshanbaral/aafu">
