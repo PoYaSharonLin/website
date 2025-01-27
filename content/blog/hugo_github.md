@@ -3,11 +3,9 @@ title: "Personal website using Hugo & GitHub Pages"
 date: 2025-01-26
 tags: ["hugo", "githubpages"]
 categories: ["application"]
-description: "n/a"
+description: "This blog is for people who would like to use Hugo template to build personal website instead of for those who would like to build their own Hugo template. Thus, the blog would not cover too much of Go. Rather, the focus is on understanding the routing logic."
 draft: false
 ---
-This blog is for people who would like to use Hugo template to build personal website instead of for those who would like to build their own Hugo template. Thus, the blog would not cover too much of Go. Rather, the focus is on understanding the routing logic.
-
 ## 01 Why Hugo & GitHub Pages
 
 I used Hugo simply because the template of Hugo is prettier compared to that of Jekyll. GitHub pages is a great option for hosting static websites because it's free and easy to use.
@@ -42,6 +40,10 @@ Content: FrontMatter & .md content
 Start with `_index.md.` to edit the FrontMatter. Having said that Hugo is a easy way of building the website, the only thing that a user should do is to edit .md file. After running the `hugo` command, the .index would be generated other required files automatically even for `tags` and `categories`, making Hugo template a good option for bloggers who knows little about Hugo.
 
 ### **3. Build the Website**
+```
+Location: TERMINAL
+Content: bash commands 
+```
 
 `hugo`: Build the website.
 `hugo -v`: Shows verbose output (detailed logs).
@@ -50,73 +52,20 @@ Start with `_index.md.` to edit the FrontMatter. Having said that Hugo is a easy
 `hugo -D`: Includes drafts in the build.
 `hugo server`: Start a local server listening to the changes.
 
+### **4. Change File Names**
+```
+Location: content/
+Content: FILE_NAME 
+```
+User can directly **change the file name** without thinking about how to refer to the new route. Hugo does all the things for you. 
 
-If the routing requires changes to templates, edit the relevant HTML files:
-
-
-
-
-
-layouts/_default/list.html for the blog list.
-
-
-
-layouts/_default/single.html for individual posts.
-
-
-
-Adjust links and references to match the new routes.
-
-6. Rebuild the Website
+### **5. Change Blog Layout**
+```
+Location: 
+layouts/_default/list.html
+layouts/_default/single.html
+Content: FILE_NAME 
+```
+The layout files are located in the `layouts` directory. You can customize the layout by editing these files. For example, you can change the layout of the blog list page in `layouts/_default/list.html`. And for each individual blog, the layout is defined in `layouts/_default/single.html`. 
 
 
-
-
-
-Run the appropriate command to regenerate the site:
-
-
-
-
-
-Hugo: hugo
-
-
-
-Jekyll: jekyll build
-
-
-
-This ensures the new routes take effect.
-
-7. Test the Changes
-
-
-
-
-
-Preview the site locally:
-
-
-
-
-
-Hugo: hugo server
-
-
-
-Jekyll: bundle exec jekyll serve
-
-
-
-Check the routing paths to ensure they work correctly.
-
-8. Deploy the Changes
-
-
-
-
-
-Push the updated files to your hosting platform (e.g., GitHub Pages, Netlify).
-
-Let me know if you can share details about the framework you're using, and I can provide more tailored instructions.

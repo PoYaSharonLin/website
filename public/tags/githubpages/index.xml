@@ -9,12 +9,13 @@
     <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/tags/githubpages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Personal website using Hugo &amp; GitHub Pages</title>
-      <link>https://poyasharonlin.github.io/website/blog/post_3/</link>
+      <link>https://poyasharonlin.github.io/website/blog/hugo_github/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://poyasharonlin.github.io/website/blog/post_3/</guid>
-      <description>This blog is for people who would like to use Hugo template to build personal website instead of for those who would like to build their own Hugo template. Thus, the blog would not cover too much of Go. Rather, the focus is on understanding the routing logic.
-01 Why Hugo &amp;amp; GitHub Pages I used Hugo simply because the template of Hugo is prettier compared to that of Jekyll. GitHub pages is a great option for hosting static websites because it&amp;rsquo;s free and easy to use.</description>
+      <guid>https://poyasharonlin.github.io/website/blog/hugo_github/</guid>
+      <description>01 Why Hugo &amp;amp; GitHub Pages I used Hugo simply because the template of Hugo is prettier compared to that of Jekyll. GitHub pages is a great option for hosting static websites because it&amp;rsquo;s free and easy to use.
+02 Pre-build It is suggested to watch the playlist before you start using the Hugo template: Hugo - Static Site Generator | Tutorial
+Though the playlist is a bit old, most of the steps are still applicable, especially for roughly understanding the Hugo framework.</description>
     </item>
     
   </channel>

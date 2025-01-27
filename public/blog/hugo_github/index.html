@@ -108,71 +108,71 @@
 
     
     <main class="grow">
-<div class="prose dark:prose-invert max-w-none">
-  <h1 class="standard font-italic">
-    #githubpages</h1>
-  
-  <div class="">
-    <div
-      class="rounded hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 active"
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<div class="mb-3">
+  <h1 class="top-h1" style="font-size: 2.75em">Personal website using Hugo &amp; GitHub Pages</h1>
+  <p class="mb-1">January 26, 2025</p>
+  <p>&mdash;</p>
+</div>
+<div class="content">
+  <h2 id="01-why-hugo--github-pages">01 Why Hugo &amp; GitHub Pages</h2>
+<p>I used Hugo simply because the template of Hugo is prettier compared to that of Jekyll. GitHub pages is a great option for hosting static websites because it&rsquo;s free and easy to use.</p>
+<h2 id="02-pre-build">02 Pre-build</h2>
+<p>It is suggested to watch the playlist before you start using the Hugo template: <!-- raw HTML omitted -->
+<a href="https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3">Hugo - Static Site Generator | Tutorial</a></p>
+<p>Though the playlist is a bit old, most of the steps are still applicable, especially for roughly understanding the Hugo framework.</p>
+<h2 id="03-build">03 Build</h2>
+<p>To understand why the steps are in this sequence, we need to understand the process of how hugo build the website. For detailed please refer to this <a href="https://chatgpt.com/share/679b7643-3430-8000-af10-14845f39f91f">ChatGPT conversation</a></p>
+<p>For those who are not familiar with Hugo template (people like me), it is not suggested to change the file structure system directly. Following steps are presented to create a personal website quickly and gradually learn the Hugo framework along the way.</p>
+<h3 id="1-edit-the-configuration-file"><strong>1. Edit the Configuration File</strong></h3>
+<pre tabindex="0"><code>Location: root/config.yaml
+Content: baseURL: https://GITHUB_NAME.github.io/REPO_NAME
+</code></pre><p>Locate the main configuration file (config.toml, _config.yml, or similar).
+Update the baseURL or the routing settings for the blog. As I am using GitHub pages, the baseURL is set to <code>https://GITHUB_NAME.github.io/REPO_NAME</code>.</p>
+<h3 id="2-edit-frontmatter-and-content-in-markdown-files"><strong>2. Edit Frontmatter and content in Markdown Files</strong></h3>
+<pre tabindex="0"><code>Location: content/_index.md (and other .md)
+Content: FrontMatter &amp; .md content
+</code></pre><p>Start with <code>_index.md.</code> to edit the FrontMatter. Having said that Hugo is a easy way of building the website, the only thing that a user should do is to edit .md file. After running the <code>hugo</code> command, the .index would be generated other required files automatically even for <code>tags</code> and <code>categories</code>, making Hugo template a good option for bloggers who knows little about Hugo.</p>
+<h3 id="3-build-the-website"><strong>3. Build the Website</strong></h3>
+<pre tabindex="0"><code>Location: TERMINAL
+Content: bash commands 
+</code></pre><p><code>hugo</code>: Build the website.
+<code>hugo -v</code>: Shows verbose output (detailed logs).
+<code>hugo --help</code>: Shows available commands and options.
+<code>hugo --minify</code>: Minifies the generated HTML and assets.
+<code>hugo -D</code>: Includes drafts in the build.
+<code>hugo server</code>: Start a local server listening to the changes.</p>
+<h3 id="4-change-file-names"><strong>4. Change File Names</strong></h3>
+<pre tabindex="0"><code>Location: content/
+Content: FILE_NAME 
+</code></pre><p>User can directly <strong>change the file name</strong> without thinking about how to refer to the new route. Hugo does all the things for you.</p>
+<h3 id="5-change-blog-layout"><strong>5. Change Blog Layout</strong></h3>
+<pre tabindex="0"><code>Location: 
+layouts/_default/list.html
+layouts/_default/single.html
+Content: FILE_NAME 
+</code></pre><p>The layout files are located in the <code>layouts</code> directory. You can customize the layout by editing these files. For example, you can change the layout of the blog list page in <code>layouts/_default/list.html</code>. And for each individual blog, the layout is defined in <code>layouts/_default/single.html</code>.</p>
+
+</div>
+</div>
+<div class="flex flex-row justify-around my-2">
+  <h3 class="mb-1 mt-1 text-left mr-4">
+    
+    <a
+      href="/website/blog/markdown_syntax/"
+      title="Demo Page"
     >
-      <i
-        onclick="expandAccordion(this)"
-        class="cursor-pointer chevron p-2 mr-4 fas fa-chevron-right rounded text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
-      ></i>
-      <a href="/website/blog/hugo_github/"
-        ><h2 class="accordion m-0">Personal website using Hugo &amp; GitHub Pages</h2></a
-      >
-    </div>
-    <div
-      id="panel-item-0"
-      class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
-    >
-      <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">January 26, 2025</p>
-<p class="mt-1 mb-0 text-sm">Reading Time: 2 minutes</p>
- 
-
-<p class="metadata-value mt-1 mb-0 text-sm taxa taxa-container-div list-categories">
-  Categories: 
-  <a
-    class="metadata-tags hover:no-underline"
-    href="/website/categories/application"
-    title="categories"
-  >
-    #application</a>
-  
-</p>
-
-
-
-<p class="metadata-value mt-1 mb-0 text-sm taxa taxa-container-div list-tags">
-  Tags: 
-  <a
-    class="metadata-tags hover:no-underline"
-    href="/website/tags/hugo"
-    title="tags"
-  >
-    #hugo</a>
-  
-  <a
-    class="metadata-tags hover:no-underline"
-    href="/website/tags/githubpages"
-    title="tags"
-  >
-    #githubpages</a>
-  
-</p>
-
-
+      <i class="nav-menu fas fa-chevron-circle-left"></i>
+    </a>
+    
+  </h3>
+  <h3 class="mb-1 mt-1 text-left ml-4">
+    
+    <i class="text-gray-300 dark:text-gray-600 fas fa-chevron-circle-right"></i>
+    
+  </h3>
 </div>
-    </div>
-  </div>
-  
-</div>
-<script src="/website/js/accordion.js"></script>
-<div class="my-6 flex justify-center pagination-links">
-  
-</div>
+
 
     </main>
     
