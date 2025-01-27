@@ -2,7 +2,7 @@
 title: "Personal website using Hugo & GitHub Pages"
 date: 2025-01-26
 tags: ["hugo", "githubpages"]
-categories: ["application"]
+categories: ["engineer"]
 description: "This blog is for people who would like to use Hugo template to build personal website instead of for those who would like to build their own Hugo template. Thus, the blog would not cover too much of Go. Rather, the focus is on understanding the routing logic."
 draft: false
 ---
