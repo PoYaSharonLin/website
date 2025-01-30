@@ -8,10 +8,13 @@
     <loc>https://poyasharonlin.github.io/website/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://poyasharonlin.github.io/website/categories/application/</loc>
+    <loc>https://poyasharonlin.github.io/website/categories/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://poyasharonlin.github.io/website/categories/</loc>
+    <loc>https://poyasharonlin.github.io/website/categories/design/</loc>
+    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://poyasharonlin.github.io/website/categories/engineer/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://poyasharonlin.github.io/website/tags/githubpages/</loc>
@@ -20,7 +23,13 @@
     <loc>https://poyasharonlin.github.io/website/tags/hugo/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://poyasharonlin.github.io/website/tags/md/</loc>
+    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://poyasharonlin.github.io/website/blog/hugo_github/</loc>
+    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://poyasharonlin.github.io/website/blog/markdown_syntax/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://poyasharonlin.github.io/website/tags/</loc>
@@ -28,26 +37,5 @@
   </url><url>
     <loc>https://poyasharonlin.github.io/website/search/</loc>
     <lastmod>2024-10-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://poyasharonlin.github.io/website/tags/css/</loc>
-    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://poyasharonlin.github.io/website/blog/markdown_syntax/</loc>
-    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://poyasharonlin.github.io/website/tags/html/</loc>
-    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://poyasharonlin.github.io/website/tags/markdown/</loc>
-    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://poyasharonlin.github.io/website/categories/syntax/</loc>
-    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://poyasharonlin.github.io/website/tags/themes/</loc>
-    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://poyasharonlin.github.io/website/categories/themes/</loc>
-    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
   </url>
 </urlset>

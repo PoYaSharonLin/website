@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>https://poyasharonlin.github.io/website/</link>
-    <description>Recent content on </description>
+    <title>engineer on </title>
+    <link>https://poyasharonlin.github.io/website/categories/engineer/</link>
+    <description>Recent content in engineer on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/categories/engineer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Personal website using Hugo &amp; GitHub Pages</title>
       <link>https://poyasharonlin.github.io/website/blog/hugo_github/</link>
@@ -16,15 +16,6 @@
       <description>01 Why Hugo &amp;amp; GitHub Pages I used Hugo simply because the template of Hugo is prettier compared to that of Jekyll. GitHub pages is a great option for hosting static websites because it&amp;rsquo;s free and easy to use.
 02 Pre-build It is suggested to watch the playlist before you start using the Hugo template: Hugo - Static Site Generator | Tutorial
 Though the playlist is a bit old, most of the steps are still applicable, especially for roughly understanding the Hugo framework.</description>
-    </item>
-    
-    <item>
-      <title>Syntax Page</title>
-      <link>https://poyasharonlin.github.io/website/blog/markdown_syntax/</link>
-      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://poyasharonlin.github.io/website/blog/markdown_syntax/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
   </channel>
