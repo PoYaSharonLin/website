@@ -1,6 +1,6 @@
 ---
 title: "Syntax Page"
-date: 2025-01-26
+date: 2025-01-30
 tags: ["md"]
 categories: ["design"]
 description: "This blog is for "
