@@ -69,3 +69,15 @@ Content: FILE_NAME
 The layout files are located in the `layouts` directory. You can customize the layout by editing these files. For example, you can change the layout of the blog list page in `layouts/_default/list.html`. And for each individual blog, the layout is defined in `layouts/_default/single.html`. 
 
 
+### **6. Deploy to GitHub Pages**
+
+Just follow the steps provided by Hugo [Host on GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/), you will be there. 
+
+GitHub provides 2 ways of deployment: 
+1. Deploy from branch 
+2. Github Actions
+
+Each of the deployments has its own advantages. 
+Deploy from branch is designed for pre-built html. For repos using static site generator (Hugo, Jykell, NextJS), only the yaml file containing the github workflow works. 
+
+This is a rough and simply blog for those who want to build a decent-looking personal website within a snap. A lot of areas remain undiscovered such as hugo building process, how Go works, and the GitHub workflow yaml file. I'll leave it to the future me. 
