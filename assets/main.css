@@ -4,6 +4,12 @@
 @tailwind variants;
 
 @layer components {
+   img {
+    @apply max-w-full h-auto; /* Makes images responsive */
+  }
+  .container {
+    @apply w-full max-w-screen-lg mx-auto px-4; /* Centers content and makes it responsive */
+  }
   .layout {
     @apply flex flex-col md:flex-row; /* Mobile: stacked, Desktop: side by side */
   }
@@ -15,6 +21,7 @@
   }
   .nav {
     @apply text-lg text-gray-500 dark:text-gray-300 font-semibold;
+    @apply flex flex-col md:flex-row md:items-center md:justify-between;
   }
   .nav > a {
     @apply hover:text-gray-700;
@@ -33,20 +40,19 @@
     @apply overflow-visible;
   }
   h1 {
-    @apply text-4xl mb-5 mt-1;
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-5 mt-1;
   }
   h2 {
-    @apply text-3xl mb-4 mt-1;
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 mt-1;
   }
   h3 {
-    @apply text-2xl mb-3 mt-1;
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl mb-3 mt-1;
   }
   h4 {
-    @apply text-xl mb-2 mt-1;
+    @apply text-base sm:text-lg md:text-xl lg:text-2xl mb-2 mt-1;
   }
   h5 {
-    @apply text-lg mb-2 mt-1;
-
+    @apply text-sm sm:text-base md:text-lg lg:text-xl mb-2 mt-1;
   }
 
   .prose ul,
