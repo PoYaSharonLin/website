@@ -4,6 +4,15 @@
 @tailwind variants;
 
 @layer components {
+  .layout {
+    @apply flex flex-col md:flex-row; /* Mobile: stacked, Desktop: side by side */
+  }
+  .sidebar {
+    @apply w-full md:w-1/4 min-w-[250px]; /* Full width on mobile, 1/4 width on desktop */
+  }
+  .content {
+    @apply flex-1; /* Takes remaining space */
+  }
   .nav {
     @apply text-lg text-gray-500 dark:text-gray-300 font-semibold;
   }
@@ -37,6 +46,7 @@
   }
   h5 {
     @apply text-lg mb-2 mt-1;
+
   }
 
   .prose ul,
