@@ -152,6 +152,16 @@ layouts/_default/list.html
 layouts/_default/single.html
 Content: FILE_NAME 
 </code></pre><p>The layout files are located in the <code>layouts</code> directory. You can customize the layout by editing these files. For example, you can change the layout of the blog list page in <code>layouts/_default/list.html</code>. And for each individual blog, the layout is defined in <code>layouts/_default/single.html</code>.</p>
+<h3 id="6-deploy-to-github-pages"><strong>6. Deploy to GitHub Pages</strong></h3>
+<p>Just follow the steps provided by Hugo <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Host on GitHub Pages</a>, you will be there.</p>
+<p>GitHub provides 2 ways of deployment:</p>
+<ol>
+<li>Deploy from branch</li>
+<li>Github Actions</li>
+</ol>
+<p>Each of the deployments has its own advantages.
+Deploy from branch is designed for pre-built html. For repos using static site generator (Hugo, Jykell, NextJS), only the yaml file containing the github workflow works.</p>
+<p>This is a rough and simply blog for those who want to build a decent-looking personal website within a snap. A lot of areas remain undiscovered such as hugo building process, how Go works, and the GitHub workflow yaml file. I&rsquo;ll leave it to the future me.</p>
 
 </div>
 </div>
@@ -177,7 +187,7 @@ Content: FILE_NAME
     </main>
     
     <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  py-6 ">
-  <p class="markdownify">powered by <a href="https://gohugo.io/">hugo</a> &amp; deployed on <a href="https://pages.github.com/">GitHub Pages</a></p>
+  <p class="markdownify">Deployed on<a href="https://pages.github.com/">GitHub Pages</a> using <a href="https://github.com/darshanbaral/aafu">aafu theme</a></p>
   <p >
     <i>
       <a href="https://github.com/darshanbaral/aafu">
