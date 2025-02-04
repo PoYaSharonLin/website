@@ -1,83 +1,100 @@
 ---
-title: "Personal website using Hugo & GitHub Pages"
+title: "Personal Website Using Hugo & GitHub Pages"
 date: 2025-01-30
 tags: ["hugo", "githubpages"]
-categories: ["engineer"]
-description: "This blog is for people who would like to use Hugo template to build personal website instead of for those who would like to build their own Hugo template. Thus, the blog would not cover too much of Go. Rather, the focus is on understanding the routing logic."
+categories: ["engineering"]
+description: "This blog is for those who want to build a personal website using a Hugo template rather than creating their own Hugo template from scratch. Therefore, this post will not delve deeply into Go but will focus on understanding the routing logic."
 draft: false
 ---
-## 01 Why Hugo & GitHub Pages
 
-I used Hugo simply because the template of Hugo is prettier compared to that of Jekyll. GitHub pages is a great option for hosting static websites because it's free and easy to use.
+## 01 Why Hugo & GitHub Pages?
 
-## 02 Pre-build
+I chose Hugo because its templates are more visually appealing compared to Jekyll's. GitHub Pages is an excellent hosting option for static websites since it is free and easy to use.
 
-It is suggested to watch the playlist before you start using the Hugo template: <br>
+## 02 Pre-Build Preparation
+
+Before using a Hugo template, I recommend watching this playlist:
+
 [Hugo - Static Site Generator | Tutorial](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3)
 
-Though the playlist is a bit old, most of the steps are still applicable, especially for roughly understanding the Hugo framework. 
+Although the playlist is somewhat outdated, most of the steps are still relevant, especially for getting a general understanding of the Hugo framework.
 
-## 03 Build 
-To understand why the steps are in this sequence, we need to understand the process of how hugo build the website. For detailed please refer to this [ChatGPT conversation](https://chatgpt.com/share/679b7643-3430-8000-af10-14845f39f91f)
+## 03 Building the Website
 
-For those who are not familiar with Hugo template (people like me), it is not suggested to change the file structure system directly. Following steps are presented to create a personal website quickly and gradually learn the Hugo framework along the way. 
+To understand the reasoning behind the following steps, it helps to be familiar with Hugo’s website-building process. For a detailed explanation, refer to this [ChatGPT conversation](https://chatgpt.com/share/679b7643-3430-8000-af10-14845f39f91f).
+
+If you are not familiar with Hugo templates (like I was initially), I do not recommend modifying the file structure directly. Instead, follow these steps to quickly set up a personal website while gradually learning about the Hugo framework.
 
 ### **1. Edit the Configuration File**
+
 ```
 Location: root/config.yaml
 Content: baseURL: https://GITHUB_NAME.github.io/REPO_NAME
 ```
 
-Locate the main configuration file (config.toml, _config.yml, or similar).
-Update the baseURL or the routing settings for the blog. As I am using GitHub pages, the baseURL is set to `https://GITHUB_NAME.github.io/REPO_NAME`.
+Locate the main configuration file (`config.toml`, `_config.yml`, or similar) and update the `baseURL` or routing settings. Since I am using GitHub Pages, the `baseURL` is set to:
 
+```
+https://GITHUB_NAME.github.io/REPO_NAME
+```
 
-### **2. Edit Frontmatter and content in Markdown Files**
+### **2. Edit Frontmatter and Markdown Content**
+
 ```
-Location: content/_index.md (and other .md)
-Content: FrontMatter & .md content
+Location: content/_index.md (and other .md files)
+Content: FrontMatter & Markdown content
 ```
-Start with `_index.md.` to edit the FrontMatter. Having said that Hugo is a easy way of building the website, the only thing that a user should do is to edit .md file. After running the `hugo` command, the .index would be generated other required files automatically even for `tags` and `categories`, making Hugo template a good option for bloggers who knows little about Hugo.
+
+Start by editing `_index.md` to modify the frontmatter. One of Hugo’s strengths is its simplicity—users only need to edit Markdown (`.md`) files. After running the `hugo` command, Hugo automatically generates necessary files, including those for `tags` and `categories`. This makes Hugo an excellent choice for bloggers who are not deeply familiar with its inner workings.
 
 ### **3. Build the Website**
+
 ```
 Location: TERMINAL
-Content: bash commands 
+Content: Bash commands
 ```
 
-`hugo`: Build the website.
-`hugo -v`: Shows verbose output (detailed logs).
-`hugo --help`: Shows available commands and options.
-`hugo --minify`: Minifies the generated HTML and assets.
-`hugo -D`: Includes drafts in the build.
-`hugo server`: Start a local server listening to the changes.
+- `hugo` – Builds the website.
+- `hugo -v` – Displays verbose output (detailed logs).
+- `hugo --help` – Shows available commands and options.
+- `hugo --minify` – Minifies the generated HTML and assets.
+- `hugo -D` – Includes draft posts in the build.
+- `hugo server` – Starts a local development server that reflects changes in real time.
 
-### **4. Change File Names**
+### **4. Rename Files**
+
 ```
 Location: content/
-Content: FILE_NAME 
+Content: FILE_NAME
 ```
-User can directly **change the file name** without thinking about how to refer to the new route. Hugo does all the things for you. 
 
-### **5. Change Blog Layout**
+You can rename files directly without worrying about updating references—Hugo handles this automatically.
+
+### **5. Customize the Blog Layout**
+
 ```
 Location: 
 layouts/_default/list.html
 layouts/_default/single.html
-Content: FILE_NAME 
+Content: FILE_NAME
 ```
-The layout files are located in the `layouts` directory. You can customize the layout by editing these files. For example, you can change the layout of the blog list page in `layouts/_default/list.html`. And for each individual blog, the layout is defined in `layouts/_default/single.html`. 
 
+Layout files are stored in the `layouts` directory. You can customize the design by modifying these files. For instance:
+- The blog list page layout is defined in `layouts/_default/list.html`.
+- The layout for individual blog posts is defined in `layouts/_default/single.html`.
 
 ### **6. Deploy to GitHub Pages**
 
-Just follow the steps provided by Hugo [Host on GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/), you will be there. 
+Follow the steps in the official Hugo guide: [Host on GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/).
 
-GitHub provides 2 ways of deployment: 
-1. Deploy from branch 
-2. Github Actions
+GitHub offers two deployment methods:
+1. **Deploy from a Branch**
+2. **GitHub Actions**
 
-Each of the deployments has its own advantages. 
-Deploy from branch is designed for pre-built html. For repos using static site generator (Hugo, Jykell, NextJS), only the yaml file containing the github workflow works. 
+Each method has its own advantages. 
+- Deploying from a branch is suited for pre-built HTML files.
+- For repositories using a static site generator (e.g., Hugo, Jekyll, Next.js), only a YAML file containing the GitHub workflow is needed.
 
-This is a rough and simply blog for those who want to build a decent-looking personal website within a snap. A lot of areas remain undiscovered such as hugo building process, how Go works, and the GitHub workflow yaml file. I'll leave it to the future me. 
+## Conclusion
+
+This is a brief and straightforward guide for those looking to set up a visually appealing personal website quickly. Many aspects remain unexplored, such as Hugo’s build process, how Go functions within Hugo, and the structure of the GitHub workflow YAML file. I will leave those topics for my future self to explore.

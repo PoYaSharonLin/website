@@ -8,14 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Personal website using Hugo &amp; GitHub Pages</title>
+      <title>Personal Website Using Hugo &amp; GitHub Pages</title>
       <link>https://poyasharonlin.github.io/website/blog/hugo_github/</link>
       <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>https://poyasharonlin.github.io/website/blog/hugo_github/</guid>
-      <description>01 Why Hugo &amp;amp; GitHub Pages I used Hugo simply because the template of Hugo is prettier compared to that of Jekyll. GitHub pages is a great option for hosting static websites because it&amp;rsquo;s free and easy to use.
-02 Pre-build It is suggested to watch the playlist before you start using the Hugo template: Hugo - Static Site Generator | Tutorial
-Though the playlist is a bit old, most of the steps are still applicable, especially for roughly understanding the Hugo framework.</description>
+      <description>01 Why Hugo &amp;amp; GitHub Pages? I chose Hugo because its templates are more visually appealing compared to Jekyll&amp;rsquo;s. GitHub Pages is an excellent hosting option for static websites since it is free and easy to use.
+02 Pre-Build Preparation Before using a Hugo template, I recommend watching this playlist:
+Hugo - Static Site Generator | Tutorial
+Although the playlist is somewhat outdated, most of the steps are still relevant, especially for getting a general understanding of the Hugo framework.</description>
     </item>
     
     <item>

@@ -9,7 +9,7 @@ params:
   copyright: >-
     Deployed on[GitHub Pages](https://pages.github.com/) 
   theme:
-    mainTheme: dark
+    mainTheme: light
     showAttribute: true
     singlePage: false
   favicons:
@@ -186,11 +186,11 @@ params:
     icon: fas fa-cogs
     list:
       - skill: "Python"
-        skillrating: 90
+        skillrating: 60
       - skill: Hugo(Go)
-        skillrating: 80
+        skillrating: 40
       - skill: NextJS(Typescript)
-        skillrating: 50
+        skillrating: 30
   hobby:
     title: Hobbies
     icon: fas fa-gamepad
