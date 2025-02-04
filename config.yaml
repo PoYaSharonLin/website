@@ -68,7 +68,7 @@ params:
       My work includes sentiment analysis in Mandarin text, fine-tuning BERT for text classification. <br><br>
 
       I gained hands-on experience in **intent detection** while working as a Customer Support AI Chat Intern, 
-      where I improved chatbot performance by refining classification techniques. My current research focus is **"Computational Pragmatics Understanding: Intent Classification Using Knowledge Graphs with BERT."** <br><br>
+      where I improved chatbot performance by enhancing Name Entity Recognition under the category of complaint and adding multiple condition keywords. My current research focus is **"Computational Pragmatics Understanding: Intent Classification Using Knowledge Graphs with BERT."** <br><br>
 
 
   experience:
@@ -80,8 +80,8 @@ params:
         company: Hotai Motor
         details: |1-
           - AI Chatbot model performance improved from **95\% to 97\%** after utilizing the following adjustments
-          - Broaden the roots and deepen the children nodes by adding new keywords and multi-condition.
-          - Improve complaint detection by retraining customers' requests about the frequent malfunction of components
+          - N-gram analysis for the "complaint" category using **Antconc** and applying **Name Entity Recognition**
+          - Added multi-condition complaint detection by retraining customers' requests about the frequent malfunction of components
       # - position: Job Title
       #   dates: 2018 - 2019
       #   url: "#"
@@ -97,7 +97,8 @@ params:
       #   thesis_url: "#"
       - degree: M.S. in Technology Management
         college: National Tsing Hua University, Taiwan
-        thesis_title: "Intention Understanding: Using Knowledge Graph and Stakeholders map to improve computational pragmatic understanding"
+        dates: 2024 - Current
+        # thesis_title: "Intention Understanding: Using Knowledge Graph and Stakeholders map to improve computational pragmatic understanding"
         # thesis_url: "#"
         description: 
       - degree: B.A. in Foreign Language and Literature 
@@ -105,8 +106,9 @@ params:
         dates: 2019 - 2024
         thesis_title: "Hybrid Electric Vehicle Sales Prediction: Using ANN, ANFIS, and Electronic Word of Mouth"
         thesis_url: "https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"
-        description: "The thesis aims to evaulate how well the search volume and the overall sentiment score of posts on a Mandarin online mobile forum would affect the prediction of sales of hybrid electric vehicles. 
-        The result revealed that the eletronic Word-of-mouth data does not substantailly improve the sales prediction of Hybrid Eletric Vehicle=. However, it is worth to note that the snowNLP did "
+        description: |
+          The thesis aims to evaulate how well the search volume and the overall sentiment score of posts on a Mandarin online mobile forum would affect the prediction of sales of hybrid electric vehicles. <br><br>
+          The result revealed that the eletronic Word-of-mouth data does not substantailly improve the sales prediction of Hybrid Eletric Vehicle.
   # experience:
   #   title: Experiences
   #   icon: fas fa-briefcase
@@ -169,11 +171,25 @@ params:
     list:
       - title: Electronic Direct Mail Precision Marketing
         url: "https://drive.google.com/file/d/1ZYTvsvyhrtboKDprvE_tktB-VFKohbBz/view?usp=sharing"
-        description: Used XGBoost to predict whether a user will un-subscribe, especially based on email domain and the app used and generate feature importance
-        # Applied BERT to generate the possibility of being un-subscribed and used SMOTE to handle data imbalance
+        description: |
+          • Utilized XGBoost to predict subscription likelihood based on user information and behavior. <br><br>
+
+          • Used SMOTE to handle data imbalance. <br><br> 
+
+          • Leveraged **BERT** to assess the likelihood of an **email subject** line leading to an unsubscription. <br><br>
+
+
+        # description: |-
+        #   - Used XGBoost to predict whether a user will un-subscribe, especially based on email domain and the app used and generate feature importance
+        #   - Applied BERT to generate the possibility of being un-subscribed and used SMOTE to handle data imbalance
       - title: Satellite Cloud Image prediction using ConvLSTM
         url: "https://drive.google.com/file/d/1sH8mLJBQgHYu6ajCrAUo0TlqGPwIRViq/view"
-        description: The project Apply ConLSTM to predict the movement of the infrared cloud image and use MAE, MSE, SSIM, PSNR as performance evaluation. Compared to ConLSTM, Self-attention LSTM may not be as effective as expected due to the characteristics of cloud cluster movement. (only moves around one specific local area at 10-minute intervals.)
+        description: |1-
+          • The project Apply **ConLSTM to predict the movement of the infrared cloud image** and use MAE, MSE, SSIM, PSNR as performance evaluation. <br><br>
+
+
+          • Compared to ConLSTM, Self-attention LSTM may not be as effective as expected due to the characteristics of cloud cluster movement. <br><br>
+          (only moves around one specific local area at 10-minute intervals.) <br><br>
       # - title: Project 3
       #   url: "#"
       #   description: Description of the project
