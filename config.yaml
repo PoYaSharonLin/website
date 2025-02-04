@@ -3,11 +3,11 @@ languageCode: en-us
 build:
   writeStats: true
 params:
-  title: aafu theme
+  title: Website
   author: Darshan Baral
   description: Website title
   copyright: >-
-    Deployed on[GitHub Pages](https://pages.github.com/) using [aafu theme](https://github.com/darshanbaral/aafu)
+    Deployed on[GitHub Pages](https://pages.github.com/) 
   theme:
     mainTheme: dark
     showAttribute: true
@@ -63,8 +63,14 @@ params:
   aboutme:
     title: About Me
     icon: fas fa-user
-    description: "This is Po-Ya, Lin, a student whose research interest is computational linguistics, especially in **Natural Language Understanding, Pragmatics, Computational Cognitive Science**. In my bachelor, I dedicated to research in sentiment analysis using NLP toolkits (snowNLP) and joined project in text classification using BERT model to anaylze customer intention. To understand how understanding customer intention contributes to the industry, I went to an automotive company as an customer support intern to understand how false indentification of customer intention would lead to the decrease in company reputation. 
-    I was especially focused on how to identify real intention under the circustance of the lack of context. Due to my research interest in Natural Language Understanding in the business content, my master thesis focuses on methods to improve computaional pragmatics understanding using knowledge graph and stakeholders map, with stakesholder map implying the relation between the user and the system and knowledge graph implying the relation between the specific topics that the user is interested in."
+    description: |
+      I am Po-Ya Lin, an NLP enthusiast with a focus on **natural language understanding** and **computational pragmatics**. 
+      My work includes sentiment analysis in Mandarin text, fine-tuning BERT for text classification. <br><br>
+
+      I gained hands-on experience in **intent detection** while working as a Customer Support AI Chat Intern, 
+      where I improved chatbot performance by refining classification techniques. My current research focus is **"Computational Pragmatics Understanding: Intent Classification Using Knowledge Graphs with BERT."** <br><br>
+
+
   experience:
     title: Experiences
     icon: fas fa-briefcase
@@ -94,7 +100,7 @@ params:
         thesis_title: "Intention Understanding: Using Knowledge Graph and Stakeholders map to improve computational pragmatic understanding"
         # thesis_url: "#"
         description: 
-      - degree: B.A. in Foreign Language and Literature (minor in German)
+      - degree: B.A. in Foreign Language and Literature 
         college: National Cheng Kung University, Taiwan
         dates: 2019 - 2024
         thesis_title: "Hybrid Electric Vehicle Sales Prediction: Using ANN, ANFIS, and Electronic Word of Mouth"
