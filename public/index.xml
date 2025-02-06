@@ -6,7 +6,17 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PyTorch Journey - Background</title>
+      <link>https://poyasharonlin.github.io/website/blog/pytorch/</link>
+      <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://poyasharonlin.github.io/website/blog/pytorch/</guid>
+      <description>01 Introduction For some people, understanding the development history of a technology may not be important. However, personally, I find it difficult to absorb knowledge without knowing at least part of its background. If you&amp;rsquo;re the type of person who prefers to skip the history and jump straight into practical applications, feel free to skip this page and dive directly into the technical content.
+02 History In this section, I will introduce the history of PyTorch through its version updates, which I believe is the best way to illustrate its evolution and improvements.</description>
+    </item>
+    
     <item>
       <title>Personal Website Using Hugo &amp; GitHub Pages</title>
       <link>https://poyasharonlin.github.io/website/blog/hugo_github/</link>

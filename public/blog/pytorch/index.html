@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto light"><head>
+  <title>Website</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Website title" />
+<meta name="author" content="Darshan Baral" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.92.2" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/website/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/website/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/website/favicon-16x16.png">        <link rel="manifest" href="/website/site.webmanifest">        <link rel="mask-icon" href="/website/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/website/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+
+  
+  
+    
+  
+  <link href="/website/main.min.52bf49927425d7092006f024ec4b9e4b4d156a53a22d476a664bf86fce8528e5.css" rel="stylesheet" />
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"
+>
+  <div>
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="https://poyasharonlin.github.io/website/">Home</a>    
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/website/blog">Blog</a>
+  </div>
+  <div>
+  <a class="mr-4" href="/website/search"><i class="fas fa-search"></i></i></a>
+  <i
+    class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+    onclick="lightDark(this)"
+  ></i>
+</div>
+</header>
+
+<script>
+  const lightDark = (el) => {
+    let html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      el.classList.add("fa-moon");
+      el.classList.remove("fa-sun");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      html.classList.add("dark");
+      el.classList.add("fa-sun");
+      el.classList.remove("fa-moon");
+      window.localStorage.setItem("theme", "dark");
+    }
+  };
+</script>
+
+    
+    <main class="grow">
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<div class="mb-3">
+  <h1 class="top-h1" style="font-size: 2.75em">PyTorch Journey - Background</h1>
+  <p class="mb-1">February 6, 2025</p>
+  <p>&mdash;</p>
+</div>
+<div class="content">
+  <h2 id="01-introduction">01 Introduction</h2>
+<p>For some people, understanding the development history of a technology may not be important. However, personally, I find it difficult to absorb knowledge without knowing at least part of its background. If you&rsquo;re the type of person who prefers to skip the history and jump straight into practical applications, feel free to skip this page and dive directly into the technical content.</p>
+<h2 id="02-history">02 History</h2>
+<p>In this section, I will introduce the history of PyTorch through its version updates, which I believe is the best way to illustrate its evolution and improvements.</p>
+<h3 id="pytorch-01"><strong>PyTorch 0.1</strong></h3>
+<p><strong>Naming:</strong></p>
+<p>PyTorch is a combination of <strong>Python</strong> and <strong>Torch</strong>. The latter is a machine learning library originally written in Lua. Although <a href="https://zh.wikipedia.org/zh-tw/Lua">Lua</a> may not be widely recognized, it is a scripting language particularly popular in game development. Two well-known applications that use Lua are Redis and Wireshark.</p>
+<p>PyTorch was developed to address the slow computation times in AI research, where experiments often took a long time to produce results. For a detailed development history, please refer to external references, as I will focus on summarizing its key aspects rather than repeating information.</p>
+<p><strong>Pros:</strong></p>
+<ol>
+<li><strong>Pythonic User Interface</strong> - Easy to understand and use.</li>
+<li><strong>Torch Tensor Operations</strong> - Supports GPU-based tensor operations, significantly improving computational speed.</li>
+<li><strong>Dynamic Computation Graph</strong> - Enables flexible model building (<a href="https://chatgpt.com/share/67a48beb-49c4-8000-b35b-4bb0e9fd070b">Static vs. Dynamic Graph</a>).</li>
+</ol>
+<p><strong>Cons:</strong></p>
+<ol>
+<li>Primarily research-oriented rather than optimized for industrial production.</li>
+</ol>
+<h3 id="pytorch-10"><strong>PyTorch 1.0</strong></h3>
+<p><strong>Background</strong>
+At the time, PyTorch&rsquo;s main competitor was TensorFlow, which was developed by Google and widely adopted by the industry. To bridge the gap and enhance its adoption, PyTorch focused on improving key areas.</p>
+<p>Two major challenges prevented PyTorch from being widely used in industry:</p>
+<ul>
+<li><strong>Environment Compatibility:</strong> Some applications did not support Python, making scripting languages preferable over full-fledged programming languages.</li>
+<li><strong>Handling Large Datasets:</strong> While research often focuses on smaller datasets, industrial applications require efficient handling of large datasets.</li>
+</ul>
+<p><strong>Features:</strong></p>
+<ol>
+<li><strong>TorchScript</strong> (Addresses the environment compatibility issue)
+<ul>
+<li>Introduces scripting capabilities that allow PyTorch models to be deployed in environments like Android using plugins.</li>
+</ul>
+</li>
+<li><strong>Integration with <a href="https://caffe2.ai/docs/caffe-migration.html#null__how-is-caffe2-different-from-pytorch">Caffe2</a></strong> (Addresses the large dataset issue)
+<ul>
+<li>Caffe2 is a framework designed for large-scale deployment.</li>
+</ul>
+</li>
+</ol>
+<h3 id="pytorch-1x"><strong>PyTorch 1.X</strong></h3>
+<p><strong>Background</strong>
+As the PyTorch ecosystem grew, the next step was expanding its open-source capabilities. To achieve this, several issues needed to be addressed.</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li><strong>ONNX (Open Neural Network Exchange)</strong>
+<ul>
+<li>Facilitates sharing and deploying models across different frameworks.</li>
+</ul>
+</li>
+<li><strong>Model Quantization Libraries</strong>
+<ul>
+<li>Enables model size reduction (e.g., converting floating-point values to integers) for efficient deployment on mobile and edge devices.</li>
+</ul>
+</li>
+<li><strong>Multimodal Capabilities</strong>
+<ul>
+<li>Expands PyTorch&rsquo;s applicability across different domains, including computer vision (<em>torchvision</em>), natural language processing (<em>torchtext</em>), and audio processing (<em>torchaudio</em>).</li>
+</ul>
+</li>
+</ul>
+<h3 id="pytorch-20"><strong>PyTorch 2.0</strong></h3>
+<p>As new hardware such as TPUs and custom AI chips emerged, integrating PyTorch with specialized ASICs became a major challenge for developers.</p>
+<p>That&rsquo;s all for today. If you&rsquo;re interested in comparing TensorFlow and PyTorch to determine which is a better choice, check out <a href="https://www.youtube.com/watch?v=QZsguRbcOBM&amp;list=PLKnIA16_Rmvboy8bmDCjwNHgTaYH2puK7&amp;index=1">PyTorch for Beginners | Introduction to PyTorch | Video 1 | CampusX</a> at timestamp <strong>30:45</strong>.</p>
+<h2 id="references">References:</h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=QZsguRbcOBM&amp;list=PLKnIA16_Rmvboy8bmDCjwNHgTaYH2puK7&amp;index=1">Practical Deep Learning using PyTorch</a></li>
+<li><a href="https://golden.com/wiki/PyTorch-NMGD4Y4#References">Wiki PyTorch</a></li>
+</ol>
+
+</div>
+</div>
+<div class="flex flex-row justify-around my-2">
+  <h3 class="mb-1 mt-1 text-left mr-4">
+    
+    <a
+      href="/website/blog/hugo_github/"
+      title="Personal Website Using Hugo &amp; GitHub Pages"
+    >
+      <i class="nav-menu fas fa-chevron-circle-left"></i>
+    </a>
+    
+  </h3>
+  <h3 class="mb-1 mt-1 text-left ml-4">
+    
+    <i class="text-gray-300 dark:text-gray-600 fas fa-chevron-circle-right"></i>
+    
+  </h3>
+</div>
+
+
+    </main>
+    
+    <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  py-6 ">
+  <p class="markdownify">Deployed on<a href="https://pages.github.com/">GitHub Pages</a></p>
+  <p >
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </p>
+</footer>
+
+    
+  </body>
+</html>
