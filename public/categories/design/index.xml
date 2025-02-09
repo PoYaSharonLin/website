@@ -6,7 +6,18 @@
     <description>Recent content in design on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/categories/design/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/categories/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LangChain Journey - Model</title>
+      <link>https://poyasharonlin.github.io/website/blog/langchain_model/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://poyasharonlin.github.io/website/blog/langchain_model/</guid>
+      <description>01 What is LangChain? LangChain is a framework for LLM application development (resource: langchain). That is to say, if you want to learn the framework to train LLM, refer to PyTorch. If you want to learn the framework to build LLM applications, refer to LangChain.
+You can simple refer to the conceptual guide and high level from langchain officials as well.
+02 Core Components of LangChain The core components of LangChain library include</description>
+    </item>
+    
     <item>
       <title>PyTorch Journey - Background</title>
       <link>https://poyasharonlin.github.io/website/blog/pytorch/</link>

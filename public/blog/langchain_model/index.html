@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto light"><head>
+  <title>Website</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Website title" />
+<meta name="author" content="Darshan Baral" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.92.2" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/website/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/website/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/website/favicon-16x16.png">        <link rel="manifest" href="/website/site.webmanifest">        <link rel="mask-icon" href="/website/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/website/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+
+  
+  
+    
+  
+  <link href="/website/main.min.4bfc2153653be59189228e99fe5f5b339da9bb4ea76444bf88008dea8bc21db8.css" rel="stylesheet" />
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"
+>
+  <div>
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="https://poyasharonlin.github.io/website/">Home</a>    
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/website/blog">Blog</a>
+  </div>
+  <div>
+  <a class="mr-4" href="/website/search"><i class="fas fa-search"></i></i></a>
+  <i
+    class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+    onclick="lightDark(this)"
+  ></i>
+</div>
+</header>
+
+<script>
+  const lightDark = (el) => {
+    let html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      el.classList.add("fa-moon");
+      el.classList.remove("fa-sun");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      html.classList.add("dark");
+      el.classList.add("fa-sun");
+      el.classList.remove("fa-moon");
+      window.localStorage.setItem("theme", "dark");
+    }
+  };
+</script>
+
+    
+    <main class="grow">
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<div class="mb-3">
+  <h1 class="top-h1" style="font-size: 2.75em">LangChain Journey - Model</h1>
+  <p class="mb-1">February 9, 2025</p>
+  <p>&mdash;</p>
+</div>
+<div class="content">
+  <h2 id="01-what-is-langchain">01 What is LangChain?</h2>
+<p>LangChain is a framework for <strong>LLM application development</strong> (resource: <a href="https://github.com/langchain-ai/langchain">langchain</a>). That is to say, if you want to learn the framework to train LLM, refer to PyTorch. If you want to learn the framework to build LLM applications, refer to LangChain.</p>
+<p>You can simple refer to the <a href="https://python.langchain.com/docs/concepts/">conceptual guide and high level</a> from langchain officials as well.</p>
+<h2 id="02-core-components-of-langchain">02 Core Components of LangChain</h2>
+<p>The core components of LangChain library include</p>
+<ol>
+<li>Model</li>
+<li>Prompt</li>
+<li>Data connection</li>
+<li>Memory</li>
+<li>Chain</li>
+<li>Agent</li>
+<li>Callback</li>
+</ol>
+<p>Even though most of the people prefer to use a bottom-up method and muscle memory, personally I prefer learning in top-down. Hence, I&rsquo;ll spend a bit time explaining how i connect all the concept together and how it helps me if I want to develop a application.</p>
+<p>First, component 1 to 4 focus on the base of the application. When we would like to develop an app, we would have to know which and what kind of model that we would like to use. For instance, NoteBookLM would definitely prefer a LLM model other than chat model. However, for an edge device, having an chat model would be more than enough. Thus, we start with model. After knowing which model to chose, we would definitely want to know how to make the model respond the right thing (as this concept is honestly pretty obvious, i&rsquo;ll skip the explanation here). The third part is data connection, what for? To do a better job in Natural Language Understanding. Data connection basically means integrating multiple data source and use different ways to output the stored data. Now, the next step is memory. Larger memory leads to more information, hierarchical memory representing faster processing speed.</p>
+<p>Component 5 to 7 focus more on automation. Chain is a library to benefit some data connection operations that are often be used, such as Transform Chain (for data transformation), SQL Chain (for retrieving data from DB), and more. Agent is a library which you can imagine as &ldquo;scripts&rdquo;, something like Google App Script that helps you in automatically connecting the chains to perform a job. Lastly, evaluation, the most vital component of all.</p>
+<h2 id="03-model-types">03 Model Types</h2>
+<p>Following is a table that summarizes the difference between LLM models and chat models. Simply put, for one-time task, choose LLMs. For multi-round conversations, choose chat models.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>LLMs (Text Models)</th>
+<th>Chat Models</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Input Format</strong></td>
+<td>Plain text prompt</td>
+<td>Structured messages (<code>system</code>, <code>user</code>, <code>assistant</code>)</td>
+</tr>
+<tr>
+<td><strong>Context Awareness</strong></td>
+<td>No built-in memory (stateless)</td>
+<td>Retains conversation history</td>
+</tr>
+<tr>
+<td><strong>Use Case</strong></td>
+<td>Standalone text tasks (summarization, text completion)</td>
+<td>Multi-turn conversations, chatbots</td>
+</tr>
+<tr>
+<td><strong>Example Models</strong></td>
+<td><code>text-davinci-003</code>, <code>LLaMA</code>, <code>GPT-NeoX</code></td>
+<td><code>gpt-4</code>, <code>Claude</code>, <code>Gemini</code>, <code>Mistral-Instruct</code></td>
+</tr>
+<tr>
+<td><strong>Instruction Handling</strong></td>
+<td>Requires explicit formatting</td>
+<td>Optimized for following instructions</td>
+</tr>
+<tr>
+<td><strong>Response Style</strong></td>
+<td>May require prompt engineering for structured responses</td>
+<td>Naturally structured as dialogue</td>
+</tr>
+</tbody>
+</table>
+<p>LangChain covers a wide range of models such as code models, document loaders, multi-modal models aside from the 3 promenent models that we are going to introduce below. For the API reference of the language model, simple refer to <a href="https://python.langchain.com/api_reference/core/language_models.html#langchain-core-language-models">Langchain API Language Models</a></p>
+<h4 id="llm-models">LLM models</h4>
+<p>In the API reference from LangChain, you can see that LLM models are generally <strong>older models</strong> that perform a single task such as pdf summarization or text completion.</p>
+<p>To create your own custom LLM class, refer to <a href="https://python.langchain.com/docs/how_to/custom_llm/">How to create a custom LLM class</a></p>
+<h4 id="chat-models">Chat models</h4>
+<p>Chat models in LangChain is more likely to be the one that the most applications are using.</p>
+<p>To create your own custom chat models, refer to <a href="https://python.langchain.com/v0.1/docs/modules/model_io/chat/custom_chat_model/">Custom Chat Model</a></p>
+<h2 id="04-embedding-models">04 Embedding models</h2>
+<p><a href="https://en.wikipedia.org/wiki/Word_embedding">Word enbedding</a> simply means representing words by vectors. The tech heads all have their own ways of doing word 2 vectors.</p>
+<p>To choose the embedding models from the tech heads (OpenAI, Azure, Google, NVDIA etc), refer to <a href="https://python.langchain.com/docs/integrations/text_embedding/">Embedding models</a></p>
+<h2 id="05-model-caching">05 Model Caching</h2>
+<p>Following is a summary table of the use case of each caching. As you can tell from this table, each of the cache type is taylored to a specific use. One should pick the desired cache type according to the main function of the application.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Cache Type</strong></th>
+<th><strong>Use Case</strong></th>
+<th><strong>Real-World Application</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>InMemoryCache</td>
+<td>Quick prototyping, local testing</td>
+<td>Temporary caching in ML model training pipelines to avoid redundant computation</td>
+</tr>
+<tr>
+<td>SQLiteCache</td>
+<td>Lightweight persistent caching</td>
+<td>Caching user preferences in a mobile application to reduce database queries</td>
+</tr>
+<tr>
+<td>RedisCache</td>
+<td>High-performance, distributed applications</td>
+<td>Storing session data and user authentication tokens in large-scale web applications like e-commerce and social media platforms</td>
+</tr>
+<tr>
+<td>GPTCache</td>
+<td>Optimized caching for LLM responses</td>
+<td>Caching AI-generated responses in customer support chatbots to enhance response time and reduce API costs</td>
+</tr>
+<tr>
+<td>MomentoCache</td>
+<td>Serverless, scalable cloud applications</td>
+<td>Implementing ephemeral caching in microservices architecture to improve API response times without managing infrastructure</td>
+</tr>
+</tbody>
+</table>
+<p>To know what are the possible Cache classes, refer to <a href="https://python.langchain.com/docs/integrations/llm_caching/#cache-classes-summary-table">Cache classes: summary table</a></p>
+<h2 id="06-model-config">06 Model Config</h2>
+<p>For application newbies(like me), configuration file means a file that has all the basic settings, just like the setting that you have in all the games so that you don&rsquo;t have do the set up of the keyboard short cut every time you log-in. (It&rsquo;s a terrible example example but i hope you get it.)</p>
+<p>For example of how model config file look like, refer to:
+<a href="https://github.com/stanford-oval/WikiChat/blob/main/llm_config.yaml">llm_config.yaml</a>
+or
+<a href="https://github.com/04RR/LLM-Trainer/blob/main/lora_config.yaml">lora_config.yaml</a></p>
+<p>As I could not find an example of config file from LangChain, <a href="https://docs.nvidia.com/nemo/guardrails/user_guides/configuration-guide.html">Configuration Gudie</a> from NVDIA also helps in understanding how should a config file look like when setting system prompts, custom actions (a file that writes down the workflow), configuring LLMs per task etc.</p>
+<h2 id="07-conclusion">07 Conclusion</h2>
+<p>In this blog, I mainly focus on explaining the high level concept of LangChain, listing components in LangChain, providing the links of the official documents related to the models in LangChain.</p>
+
+</div>
+</div>
+<div class="flex flex-row justify-around my-2">
+  <h3 class="mb-1 mt-1 text-left mr-4">
+    
+    <a
+      href="/website/blog/pytorch/"
+      title="PyTorch Journey - Background"
+    >
+      <i class="nav-menu fas fa-chevron-circle-left"></i>
+    </a>
+    
+  </h3>
+  <h3 class="mb-1 mt-1 text-left ml-4">
+    
+    <i class="text-gray-300 dark:text-gray-600 fas fa-chevron-circle-right"></i>
+    
+  </h3>
+</div>
+
+
+    </main>
+    
+    <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  py-6 ">
+  <p class="markdownify">Deployed on<a href="https://pages.github.com/">GitHub Pages</a></p>
+  <p >
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </p>
+</footer>
+
+    
+  </body>
+</html>
