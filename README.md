@@ -1,12 +1,12 @@
 # Website 
 
----
+
 ## About 
 A static site showcasing blogs and projects, generated with Hugo and hosted via GitHub Pages.
 
 Demo: https://poyasharonlin.github.io/website/
 
----
+
 
 ## How to add blog post
 
