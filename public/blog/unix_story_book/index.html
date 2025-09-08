@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto light"><head>
+  <title>Website</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Website title" />
+<meta name="author" content="Darshan Baral" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.92.2" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/website/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/website/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/website/favicon-16x16.png">        <link rel="manifest" href="/website/site.webmanifest">        <link rel="mask-icon" href="/website/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/website/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+
+  
+  
+    
+  
+  <link href="/website/main.min.4bfc2153653be59189228e99fe5f5b339da9bb4ea76444bf88008dea8bc21db8.css" rel="stylesheet" />
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"
+>
+  <div>
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="https://poyasharonlin.github.io/website/">Home</a>    
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/website/blog">Blog</a>
+  </div>
+  <div>
+  <a class="mr-4" href="/website/search"><i class="fas fa-search"></i></i></a>
+  <i
+    class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+    onclick="lightDark(this)"
+  ></i>
+</div>
+</header>
+
+<script>
+  const lightDark = (el) => {
+    let html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      el.classList.add("fa-moon");
+      el.classList.remove("fa-sun");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      html.classList.add("dark");
+      el.classList.add("fa-sun");
+      el.classList.remove("fa-moon");
+      window.localStorage.setItem("theme", "dark");
+    }
+  };
+</script>
+
+    
+    <main class="grow">
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<div class="mb-3">
+  <h1 class="top-h1" style="font-size: 2.75em">Linux Tutorial for Beginners - Story Book Version</h1>
+  <p class="mb-1">September 2, 2025</p>
+  <p>&mdash;</p>
+</div>
+<div class="content">
+  <h2 id="unix-introduction">UNIX Introduction</h2>
+<p>Reference: <a href="https://linuxtut.netlify.app/unixintro">https://linuxtut.netlify.app/unixintro</a></p>
+<h3 id="the-unix-operating-system">The UNIX operating system</h3>
+<p>In the article, the author says that <em>&ldquo;The UNIX operating system is made up of three parts; the kernel, the shell and the programs.&quot;</em>. Personally, I would like to add users to it.</p>
+<ul>
+<li>Login
+The flowchart below illustrates the process of a user logging into a UNIX system. The kernel verifies the username and password. If the credentials are correct, the user can start a program, which typically opens a shell. If the credentials are incorrect, it returns an error message indicating failed authentication.</li>
+</ul>
+<pre tabindex="0"><code>flowchart TD
+    A[Users] --&gt;|Log in| B[Kernel]
+    B --&gt; C{authorized Username&amp;PWD?}
+    C --&gt;|Yes| D[Program]
+    D --&gt; |Start| E[shell]
+    C --&gt;|No| F[Error Message: Failed Authentication]
+</code></pre><ul>
+<li>Shell starts
+After logging in, the users can start to enter commands to the shell. The flowchart below illustrates the process of a user entering a command <code>rm myfile</code> to the shell. The shell checks if the file <code>myfile</code> exists. If it does, the shell starts the corresponding program, <code>rm</code>. If not, it returns an error message indicating that the file does not exist.</li>
+</ul>
+<pre tabindex="0"><code>flowchart TD
+    A[Users] --&gt;|rm myfile| B[Shell]
+    B --&gt; C{myfile exists?}
+    C --&gt;|Yes| D[Program]
+    D --&gt; |Start| E[rm]
+    C --&gt;|No| F[Error Message: No such file or directory]
+</code></pre><p>🤔 Can we interact with the Kernal without shell?
+Yes, shell is an interface. You can bipass interface but having an interface will make your life easier.</p>
+<p>Scenario:
+Doing <code>ls</code> with or withour shell</p>
+<ul>
+<li>With shell:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls
+</code></pre></div><ul>
+<li>Without shell:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;unistd.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>args[] <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;/bin/ls&#34;</span>, NULL};
+    execve(<span style="color:#e6db74">&#34;/bin/ls&#34;</span>, args, NULL);
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+</code></pre></div><h3 id="files-and-processes">Files and Processes</h3>
+<p>PID is process ID, which we often use to kill the process.</p>
+<p>Use <code>SIGTERM</code> to terminate the process</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kill &lt;PID&gt;
+</code></pre></div><p>Use <code>SIGKILL</code> to forcefully terminate the process</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kill -9 &lt;PID&gt;
+</code></pre></div><h3 id="the-directory-structure">The Directory Structure</h3>
+<p>According to what we knew from <strong>The UNIX operating system</strong>, each session is created once a user logins. What about the difference between <code>su</code>(substitute) and <code>sudo</code>(superuser do) then?</p>
+<p>To compare it and see the difference, just go enter the prompt and find it out.</p>
+<h3 id="starting-xterminal-session">Starting Xterminal session</h3>
+<p>Nothing more to add</p>
+<h2 id="linux-tutorial-one">Linux Tutorial One</h2>
+<p><code>% ls ~</code> lists all the files in the home directory.
+<code>% ls ~/..</code> lists all the files in the parent directory of the home directory</p>
+<h2 id="linux-tutorial-two">Linux Tutorial Two</h2>
+<p><code>grep -i</code> is an useful command to search to ignore case sensitivity</p>
+<h2 id="linux-tutorial-three">Linux Tutorial Three</h2>
+
+</div>
+</div>
+<div class="flex flex-row justify-around my-2">
+  <h3 class="mb-1 mt-1 text-left mr-4">
+    
+    <a
+      href="/website/blog/pytorch_tensor/"
+      title="PyTorch Journey - Tensor"
+    >
+      <i class="nav-menu fas fa-chevron-circle-left"></i>
+    </a>
+    
+  </h3>
+  <h3 class="mb-1 mt-1 text-left ml-4">
+    
+    <i class="text-gray-300 dark:text-gray-600 fas fa-chevron-circle-right"></i>
+    
+  </h3>
+</div>
+
+
+    </main>
+    
+    <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  py-6 ">
+  <p class="markdownify">Deployed on<a href="https://pages.github.com/">GitHub Pages</a></p>
+  <p >
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </p>
+</footer>
+
+    
+  </body>
+</html>

@@ -6,7 +6,28 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Tutorial for Beginners - Story Book Version</title>
+      <link>https://poyasharonlin.github.io/website/blog/unix_story_book/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://poyasharonlin.github.io/website/blog/unix_story_book/</guid>
+      <description>UNIX Introduction Reference: https://linuxtut.netlify.app/unixintro
+The UNIX operating system In the article, the author says that &amp;ldquo;The UNIX operating system is made up of three parts; the kernel, the shell and the programs.&amp;quot;. Personally, I would like to add users to it.
+ Login The flowchart below illustrates the process of a user logging into a UNIX system. The kernel verifies the username and password. If the credentials are correct, the user can start a program, which typically opens a shell.</description>
+    </item>
+    
+    <item>
+      <title>PyTorch Journey - Tensor</title>
+      <link>https://poyasharonlin.github.io/website/blog/pytorch_tensor/</link>
+      <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://poyasharonlin.github.io/website/blog/pytorch_tensor/</guid>
+      <description>01 Introduction For some people, understanding the development history of a technology may not be important. However, personally, I find it difficult to absorb knowledge without knowing at least part of its background. If you&amp;rsquo;re the type of person who prefers to skip the history and jump straight into practical applications, feel free to skip this page and dive directly into the technical content.
+02 Tensors What are tensors?</description>
+    </item>
+    
     <item>
       <title>LangChain Journey - Model</title>
       <link>https://poyasharonlin.github.io/website/blog/langchain_model/</link>
@@ -20,10 +41,10 @@ You can simple refer to the conceptual guide and high level from langchain offic
     
     <item>
       <title>PyTorch Journey - Background</title>
-      <link>https://poyasharonlin.github.io/website/blog/pytorch/</link>
+      <link>https://poyasharonlin.github.io/website/blog/pytorch_background/</link>
       <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://poyasharonlin.github.io/website/blog/pytorch/</guid>
+      <guid>https://poyasharonlin.github.io/website/blog/pytorch_background/</guid>
       <description>01 Introduction For some people, understanding the development history of a technology may not be important. However, personally, I find it difficult to absorb knowledge without knowing at least part of its background. If you&amp;rsquo;re the type of person who prefers to skip the history and jump straight into practical applications, feel free to skip this page and dive directly into the technical content.
 02 History In this section, I will introduce the history of PyTorch through its version updates, which I believe is the best way to illustrate its evolution and improvements.</description>
     </item>

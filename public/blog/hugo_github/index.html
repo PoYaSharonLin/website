@@ -124,16 +124,16 @@
 <h2 id="03-building-the-website">03 Building the Website</h2>
 <p>To understand the reasoning behind the following steps, it helps to be familiar with Hugo’s website-building process. For a detailed explanation, refer to this <a href="https://chatgpt.com/share/679b7643-3430-8000-af10-14845f39f91f">ChatGPT conversation</a>.</p>
 <p>If you are not familiar with Hugo templates (like I was initially), I do not recommend modifying the file structure directly. Instead, follow these steps to quickly set up a personal website while gradually learning about the Hugo framework.</p>
-<h3 id="1-edit-the-configuration-file"><strong>1. Edit the Configuration File</strong></h3>
+<h3 id="a-edit-the-configuration-file"><strong>a. Edit the Configuration File</strong></h3>
 <pre tabindex="0"><code>Location: root/config.yaml
 Content: baseURL: https://GITHUB_NAME.github.io/REPO_NAME
 </code></pre><p>Locate the main configuration file (<code>config.toml</code>, <code>_config.yml</code>, or similar) and update the <code>baseURL</code> or routing settings. Since I am using GitHub Pages, the <code>baseURL</code> is set to:</p>
 <pre tabindex="0"><code>https://GITHUB_NAME.github.io/REPO_NAME
-</code></pre><h3 id="2-edit-frontmatter-and-markdown-content"><strong>2. Edit Frontmatter and Markdown Content</strong></h3>
+</code></pre><h3 id="b-edit-frontmatter-and-markdown-content"><strong>b. Edit Frontmatter and Markdown Content</strong></h3>
 <pre tabindex="0"><code>Location: content/_index.md (and other .md files)
 Content: FrontMatter &amp; Markdown content
 </code></pre><p>Start by editing <code>_index.md</code> to modify the frontmatter. One of Hugo’s strengths is its simplicity—users only need to edit Markdown (<code>.md</code>) files. After running the <code>hugo</code> command, Hugo automatically generates necessary files, including those for <code>tags</code> and <code>categories</code>. This makes Hugo an excellent choice for bloggers who are not deeply familiar with its inner workings.</p>
-<h3 id="3-build-the-website"><strong>3. Build the Website</strong></h3>
+<h3 id="c-build-the-website"><strong>c. Build the Website</strong></h3>
 <pre tabindex="0"><code>Location: TERMINAL
 Content: Bash commands
 </code></pre><ul>
@@ -144,11 +144,11 @@ Content: Bash commands
 <li><code>hugo -D</code> – Includes draft posts in the build.</li>
 <li><code>hugo server</code> – Starts a local development server that reflects changes in real time.</li>
 </ul>
-<h3 id="4-rename-files"><strong>4. Rename Files</strong></h3>
+<h3 id="d-rename-files"><strong>d. Rename Files</strong></h3>
 <pre tabindex="0"><code>Location: content/
 Content: FILE_NAME
 </code></pre><p>You can rename files directly without worrying about updating references—Hugo handles this automatically.</p>
-<h3 id="5-customize-the-blog-layout"><strong>5. Customize the Blog Layout</strong></h3>
+<h3 id="e-customize-the-blog-layout"><strong>e. Customize the Blog Layout</strong></h3>
 <pre tabindex="0"><code>Location: 
 layouts/_default/list.html
 layouts/_default/single.html
@@ -158,7 +158,7 @@ Content: FILE_NAME
 <li>The blog list page layout is defined in <code>layouts/_default/list.html</code>.</li>
 <li>The layout for individual blog posts is defined in <code>layouts/_default/single.html</code>.</li>
 </ul>
-<h3 id="6-deploy-to-github-pages"><strong>6. Deploy to GitHub Pages</strong></h3>
+<h3 id="f-deploy-to-github-pages"><strong>f. Deploy to GitHub Pages</strong></h3>
 <p>Follow the steps in the official Hugo guide: <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Host on GitHub Pages</a>.</p>
 <p>GitHub offers two deployment methods:</p>
 <ol>
@@ -170,7 +170,7 @@ Content: FILE_NAME
 <li>Deploying from a branch is suited for pre-built HTML files.</li>
 <li>For repositories using a static site generator (e.g., Hugo, Jekyll, Next.js), only a YAML file containing the GitHub workflow is needed.</li>
 </ul>
-<h2 id="conclusion">Conclusion</h2>
+<h2 id="04-conclusion">04 Conclusion</h2>
 <p>This is a brief and straightforward guide for those looking to set up a visually appealing personal website quickly. Many aspects remain unexplored, such as Hugo’s build process, how Go functions within Hugo, and the structure of the GitHub workflow YAML file. I will leave those topics for my future self to explore.</p>
 
 </div>
@@ -189,7 +189,7 @@ Content: FILE_NAME
   <h3 class="mb-1 mt-1 text-left ml-4">
     
     <a
-      href="/website/blog/pytorch/"
+      href="/website/blog/pytorch_background/"
       title="PyTorch Journey - Background"
     >
       <i class="nav-menu fas fa-chevron-circle-right"></i>

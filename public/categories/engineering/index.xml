@@ -6,7 +6,18 @@
     <description>Recent content in engineering on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/categories/engineering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/categories/engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Tutorial for Beginners - Story Book Version</title>
+      <link>https://poyasharonlin.github.io/website/blog/unix_story_book/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://poyasharonlin.github.io/website/blog/unix_story_book/</guid>
+      <description>UNIX Introduction Reference: https://linuxtut.netlify.app/unixintro
+The UNIX operating system In the article, the author says that &amp;ldquo;The UNIX operating system is made up of three parts; the kernel, the shell and the programs.&amp;quot;. Personally, I would like to add users to it.
+ Login The flowchart below illustrates the process of a user logging into a UNIX system. The kernel verifies the username and password. If the credentials are correct, the user can start a program, which typically opens a shell.</description>
+    </item>
+    
     <item>
       <title>Personal Website Using Hugo &amp; GitHub Pages</title>
       <link>https://poyasharonlin.github.io/website/blog/hugo_github/</link>

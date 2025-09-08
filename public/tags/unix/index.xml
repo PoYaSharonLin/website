@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UNIX on </title>
+    <link>https://poyasharonlin.github.io/website/tags/unix/</link>
+    <description>Recent content in UNIX on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/tags/unix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Tutorial for Beginners - Story Book Version</title>
+      <link>https://poyasharonlin.github.io/website/blog/unix_story_book/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://poyasharonlin.github.io/website/blog/unix_story_book/</guid>
+      <description>UNIX Introduction Reference: https://linuxtut.netlify.app/unixintro
+The UNIX operating system In the article, the author says that &amp;ldquo;The UNIX operating system is made up of three parts; the kernel, the shell and the programs.&amp;quot;. Personally, I would like to add users to it.
+ Login The flowchart below illustrates the process of a user logging into a UNIX system. The kernel verifies the username and password. If the credentials are correct, the user can start a program, which typically opens a shell.</description>
+    </item>
+    
+  </channel>
+</rss>
