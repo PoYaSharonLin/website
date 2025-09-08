@@ -25,7 +25,7 @@ To understand the reasoning behind the following steps, it helps to be familiar 
 
 If you are not familiar with Hugo templates (like I was initially), I do not recommend modifying the file structure directly. Instead, follow these steps to quickly set up a personal website while gradually learning about the Hugo framework.
 
-### **1. Edit the Configuration File**
+### **a. Edit the Configuration File**
 
 ```
 Location: root/config.yaml
@@ -38,7 +38,7 @@ Locate the main configuration file (`config.toml`, `_config.yml`, or similar) an
 https://GITHUB_NAME.github.io/REPO_NAME
 ```
 
-### **2. Edit Frontmatter and Markdown Content**
+### **b. Edit Frontmatter and Markdown Content**
 
 ```
 Location: content/_index.md (and other .md files)
@@ -47,7 +47,7 @@ Content: FrontMatter & Markdown content
 
 Start by editing `_index.md` to modify the frontmatter. One of Hugo’s strengths is its simplicity—users only need to edit Markdown (`.md`) files. After running the `hugo` command, Hugo automatically generates necessary files, including those for `tags` and `categories`. This makes Hugo an excellent choice for bloggers who are not deeply familiar with its inner workings.
 
-### **3. Build the Website**
+### **c. Build the Website**
 
 ```
 Location: TERMINAL
@@ -61,7 +61,7 @@ Content: Bash commands
 - `hugo -D` – Includes draft posts in the build.
 - `hugo server` – Starts a local development server that reflects changes in real time.
 
-### **4. Rename Files**
+### **d. Rename Files**
 
 ```
 Location: content/
@@ -70,7 +70,7 @@ Content: FILE_NAME
 
 You can rename files directly without worrying about updating references—Hugo handles this automatically.
 
-### **5. Customize the Blog Layout**
+### **e. Customize the Blog Layout**
 
 ```
 Location: 
@@ -83,7 +83,7 @@ Layout files are stored in the `layouts` directory. You can customize the design
 - The blog list page layout is defined in `layouts/_default/list.html`.
 - The layout for individual blog posts is defined in `layouts/_default/single.html`.
 
-### **6. Deploy to GitHub Pages**
+### **f. Deploy to GitHub Pages**
 
 Follow the steps in the official Hugo guide: [Host on GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/).
 
@@ -95,6 +95,6 @@ Each method has its own advantages.
 - Deploying from a branch is suited for pre-built HTML files.
 - For repositories using a static site generator (e.g., Hugo, Jekyll, Next.js), only a YAML file containing the GitHub workflow is needed.
 
-## Conclusion
+## 04 Conclusion
 
 This is a brief and straightforward guide for those looking to set up a visually appealing personal website quickly. Many aspects remain unexplored, such as Hugo’s build process, how Go functions within Hugo, and the structure of the GitHub workflow YAML file. I will leave those topics for my future self to explore.
