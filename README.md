@@ -8,6 +8,16 @@ Demo: https://poyasharonlin.github.io/website/
 
 
 
+## Directory Structure
+
+This repository follows the standard Hugo directory structure:
+
+- `content/`: Contains the markdown source files for your posts and pages.
+- `layouts/`: Contains HTML templates that define the site's structure.
+- `static/`: Stores static assets (images, CSS, JS, icons) that are copied directly to the build output.
+- `assets/`: Contains assets that are processed by Hugo Pipes.
+- `config.yaml`: The main configuration file for the site.
+
 ## How to add blog post
 
 ### 01 Add a new markdown 

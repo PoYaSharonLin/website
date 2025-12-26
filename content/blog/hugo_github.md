@@ -21,7 +21,7 @@ Although the playlist is somewhat outdated, most of the steps are still relevant
 
 ## 03 Building the Website
 
-To understand the reasoning behind the following steps, it helps to be familiar with Hugo’s website-building process. For a detailed explanation, refer to this [ChatGPT conversation](https://chatgpt.com/share/679b7643-3430-8000-af10-14845f39f91f).
+To understand the reasoning behind the following steps, it helps to be familiar with Hugo’s website-building process.
 
 If you are not familiar with Hugo templates (like I was initially), I do not recommend modifying the file structure directly. Instead, follow these steps to quickly set up a personal website while gradually learning about the Hugo framework.
 
