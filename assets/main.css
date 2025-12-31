@@ -8,7 +8,7 @@
     @apply max-w-full h-auto; /* Makes images responsive */
   }
   .container {
-    @apply w-full max-w-screen-lg mx-auto px-4; /* Centers content and makes it responsive */
+    @apply w-full max-w-full mx-auto px-4; /* Centers content and makes it responsive */
   }
   .layout {
     @apply flex flex-col md:flex-row; /* Mobile: stacked, Desktop: side by side */
