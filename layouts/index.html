@@ -1,42 +1,34 @@
 {{ define "main" }}
-<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
-  <div class="col-span-2">
-    <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2">
-      <div class="flex flex-col justify-center">
-        <div class="">{{ partial "profilePhoto" . }}</div>
-        <div class="p-2 text-center">
-          {{ partial "social" . }} {{ partial "footer" . }}
+<div class="grid grid-cols-1 md:grid-cols-4 gap-5 sm py-2">
+  <div class="col-span-1">
+    <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2 h-full">
+      <div class="flex flex-col h-full justify-between text-center">
+        <div>
+          {{ partial "profilePhoto" . }}
+          <div class="p-2">
+            {{ partial "social" . }}
+          </div>
+        </div>
+        <div class="p-2">
+          {{ partial "footer" . }}
         </div>
       </div>
     </div>
   </div>
   <div class="col-span-3 relative">
     {{ range .Site.Params.showInAccordion }}
-    <div class="px-2">
-      <h2 class="my-0 accordion {{- if .expand }} active {{- end }}">
-        {{ $current := index $.Site.Params .item }}
-        <p
-          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
-          onclick="expandAccordion(this)"
-          style="cursor: pointer"
-        >
-          <i class="{{ $current.icon }}"></i>
-          {{ $current.title -}}
-        </p>
+    <div class="px-2 mb-8">
+      {{ $current := index $.Site.Params .item }}
+      <h2 class="text-2xl font-bold mb-4 border-b border-gray-300 pb-2 text-black flex items-center gap-2">
+        <i class="{{ $current.icon }}"></i>
+        {{ $current.title -}}
       </h2>
 
-      <div
-        class="panel overflow-hidden px-2 ml-2"
-        {{if $current.panelid}}
-        id="{{ $current.panelid }}"
-        {{ end }}
-      >
-        <div class="">{{ partial (print "accordion/" .item) $ }}</div>
+      <div class="pl-0">
+        {{ partial (print "accordion/" .item) $ }}
       </div>
     </div>
     {{ end }}
-
-    <script src="{{ `js/accordion.js` | relURL }}"></script>
   </div>
 </div>
 {{ end }}

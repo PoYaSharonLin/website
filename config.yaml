@@ -7,7 +7,7 @@ params:
   author: Darshan Baral
   description: Website title
   copyright: >-
-    Deployed on[GitHub Pages](https://pages.github.com/) 
+    Deployed on [GitHub Pages](https://pages.github.com/) 
   theme:
     mainTheme: light
     showAttribute: true
@@ -54,21 +54,21 @@ params:
   showInAccordion:
     - item: aboutme
       expand: true
-    - item: experience
-    - item: education
-    - item: publication
-    - item: project
-    - item: skill
-    - item: hobby
   aboutme:
     title: About Me
     icon: fas fa-user
     description: |
-      I am Po-Ya Lin, an NLP enthusiast with a focus on **natural language understanding** and **computational pragmatics**. 
-      My work includes sentiment analysis in Mandarin text, fine-tuning BERT for text classification. <br><br>
+      I am a Master's student in Technology Management at National Tsing Hua University, specializing in AI-driven analytics and data-driven decision-making for business contexts. My interdisciplinary background bridges technical innovation with real-world economic impacts, particularly through the integration of user-generated content, social signals, and advanced natural language processing (NLP) techniques into predictive and platform-based systems.
 
-      I gained hands-on experience in **intent detection** while working as a Customer Support AI Chat Intern, 
-      where I improved chatbot performance by enhancing Name Entity Recognition under the category of complaint and adding multiple condition keywords. My current research focus is **"Computational Pragmatics Understanding: Intent Classification Using Knowledge Graphs with BERT."** <br><br>
+      A key contribution is my NSTC-funded publication on hybrid electric vehicle sales forecasting, where an ANFIS model incorporating electronic word-of-mouth (E-WOM) sentiment and volume features—extracted via NLP-driven text analysis—outperformed traditional approaches. This work highlights how online social data and review signals enhance sales prediction accuracy in dynamic markets, aligning with empirical investigations into the business value of user-generated content.
+
+      At Micron Technology, I developed internal tools using Autogen LLMs and Plotly dashboards for real-time semiconductor production analysis and forecasting, reducing query response times by 75% via optimized caching—demonstrating scalable AI applications that boost organizational productivity in high-stakes industries.
+
+      My open-source projects further explore digital platforms, user interactions, and NLP applications:
+
+      **AcaRadar**: A full-stack web app enabling interest-based retrieval of arXiv metadata through text embeddings and semantic search (leveraging NLP for personalized information discovery), architected with domain-driven design, RESTful APIs, and AWS SQS for resilient microservices—addressing challenges in cross-domain scholarly productivity and collective intelligence in academic platforms.
+
+      **MindBigData**: An interactive EEG classification tool deploying PyTorch models via Streamlit, facilitating real-time experimentation with multimodal human-AI interfaces.
 
 
   experience:
@@ -79,7 +79,7 @@ params:
         dates: 2022/07 - 2022/09
         company: Hotai Motor
         details: |1-
-          - AI Chatbot model performance improved from **95\% to 97\%** after utilizing the following adjustments
+          - Improved AI Chatbot model performance from **95\% to 97\%** after implementing the following adjustments
           - N-gram analysis for the "complaint" category using **Antconc** and applying **Name Entity Recognition**
           - Added multi-condition complaint detection by retraining customers' requests about the frequent malfunction of components
       # - position: Job Title
@@ -97,7 +97,7 @@ params:
       #   thesis_url: "#"
       - degree: M.S. in Technology Management
         college: National Tsing Hua University, Taiwan
-        dates: 2024 - Current
+        dates: 2024 - Present
         # thesis_title: "Intention Understanding: Using Knowledge Graph and Stakeholders map to improve computational pragmatic understanding"
         # thesis_url: "#"
         description: 
@@ -107,8 +107,8 @@ params:
         thesis_title: "Hybrid Electric Vehicle Sales Prediction: Using ANN, ANFIS, and Electronic Word of Mouth"
         thesis_url: "https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"
         description: |
-          The thesis aims to evaulate how well the search volume and the overall sentiment score of posts on a Mandarin online mobile forum would affect the prediction of sales of hybrid electric vehicles. <br><br>
-          The result revealed that the eletronic Word-of-mouth data does not substantailly improve the sales prediction of Hybrid Eletric Vehicle.
+          The thesis aims to evaluate how well the search volume and the overall sentiment score of posts on a Mandarin online mobile forum would affect the prediction of sales of hybrid electric vehicles. <br><br>
+          The result revealed that the electronic Word-of-mouth data does not substantially improve the sales prediction of Hybrid Electric Vehicle.
   # experience:
   #   title: Experiences
   #   icon: fas fa-briefcase
@@ -185,7 +185,7 @@ params:
       - title: Satellite Cloud Image prediction using ConvLSTM
         url: "https://drive.google.com/file/d/1sH8mLJBQgHYu6ajCrAUo0TlqGPwIRViq/view"
         description: |1-
-          • The project Apply **ConLSTM to predict the movement of the infrared cloud image** and use MAE, MSE, SSIM, PSNR as performance evaluation. <br><br>
+          • Applied **ConvLSTM to predict the movement of the infrared cloud image** and used MAE, MSE, SSIM, PSNR as performance evaluation. <br><br>
 
 
           • Compared to ConLSTM, Self-attention LSTM may not be as effective as expected due to the characteristics of cloud cluster movement. <br><br>

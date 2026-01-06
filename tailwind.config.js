@@ -62,6 +62,9 @@ module.exports = {
           },
         },
       }),
+      fontFamily: {
+        sans: ["Calibri", "sans-serif"],
+      },
     },
   },
   variants: { typography: ["invert"], extend: {} },
