@@ -129,42 +129,18 @@ params:
   #   title: Education
   #   icon: fas fa-graduation-cap
   #   list:
-  # publication:
-  #   title: Publications
-  #   icon: fas fa-book
-  #   format:
-  #     - date
-  #     - title
-  #     - authors
-  #     - journal
-  #   types:
-  #     - Journal Articles
-  #     - Proceedings
-  #   list:
-  #     - title: >-
-  #         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  #         eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  #       authors: "F Last, F Second, P secondary"
-  #       date: "2018"
-  #       journal: "Journal of Field 52 (16), 9033-9044"
-  #       url: "#"
-  #       type: Journal Articles
-  #     - title: >-
-  #         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  #         eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  #       authors: "F Last, F Second, P secondary"
-  #       date: "2018"
-  #       journal: "Journal of Field 52 (16), 9033-9044"
-  #       url: "#"
-  #       type: Journal Articles
-  #     - title: >-
-  #         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  #         eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  #       authors: "F Last, F Second, P secondary"
-  #       date: "2018"
-  #       journal: "Journal of Field 52 (16), 9033-9044"
-  #       url: "#"
-  #       type: Proceedings
+  publication:
+    title: Publications
+    icon: fas fa-book
+    list:
+      - title: "Hybrid Electric Vehicle Sales Prediction using ANN, ANFIS, and E-Word-of-Mouth"
+        url: "https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"
+        description: |
+          • Achieved highest accuracy with ANFIS model incorporating E-WOM sentiment and volume features
+          
+          • Demonstrated significant forecasting improvements via social media signal integration
+          
+          • NSTC 112-2813-C-006-026-H 2
   project:
     title: Projects
     icon: fas fa-project-diagram
