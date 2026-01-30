@@ -1,34 +1,55 @@
 {{ define "main" }}
-<div class="grid grid-cols-1 md:grid-cols-4 gap-5 sm py-2">
-  <div class="col-span-1">
-    <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2 h-full">
-      <div class="flex flex-col h-full justify-between text-center">
-        <div>
+<!-- Academic Homepage Layout -->
+<div class="max-w-7xl mx-auto py-8">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    
+    <!-- Sidebar: Profile -->
+    <div class="col-span-1">
+      <div class="profile-section sticky top-8">
+        <div class="text-center">
           {{ partial "profilePhoto" . }}
-          <div class="p-2">
+          <h1 class="text-2xl font-bold mt-4 mb-1">{{ .Site.Params.profile.name }}</h1>
+          <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">{{ .Site.Params.profile.location }}</p>
+          
+          <div class="my-4">
             {{ partial "social" . }}
           </div>
-        </div>
-        <div class="p-2">
-          {{ partial "footer" . }}
+          
+          <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-700">
+            {{ partial "footer" . }}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="col-span-3 relative">
-    {{ range .Site.Params.showInAccordion }}
-    <div class="px-2 mb-8">
-      {{ $current := index $.Site.Params .item }}
-      <h2 class="text-2xl font-bold mb-4 border-b border-gray-300 pb-2 text-black flex items-center gap-2">
-        <i class="{{ $current.icon }}"></i>
-        {{ $current.title -}}
-      </h2>
-
-      <div class="pl-0">
-        {{ partial (print "accordion/" .item) $ }}
-      </div>
+    
+    <!-- Main Content -->
+    <div class="col-span-3">
+      
+      <!-- About Section -->
+      <section class="mb-10">
+        <h2 class="section-header">About</h2>
+        <div class="text-slate-700 dark:text-slate-300 leading-relaxed">
+          {{ .Site.Params.aboutme.description | markdownify }}
+        </div>
+      </section>
+      
+      <!-- Additional Accordion Sections (if any beyond aboutme) -->
+      {{ range $index, $item := .Site.Params.showInAccordion }}
+        {{ if ne $item.item "aboutme" }}
+        {{ $current := index $.Site.Params $item.item }}
+        <section class="mb-10">
+          <h2 class="section-header flex items-center gap-2">
+            <i class="{{ $current.icon }} text-slate-500"></i>
+            {{ $current.title }}
+          </h2>
+          <div class="content-section">
+            {{ partial (print "accordion/" $item.item) $ }}
+          </div>
+        </section>
+        {{ end }}
+      {{ end }}
+      
     </div>
-    {{ end }}
   </div>
 </div>
 {{ end }}
