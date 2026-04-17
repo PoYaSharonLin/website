@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>user-behavior on </title>
-    <link>https://poyasharonlin.github.io/website/tags/user-behavior/</link>
+    <link>http://localhost:8000/website/tags/user-behavior/</link>
     <description>Recent content in user-behavior on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/tags/user-behavior/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/website/tags/user-behavior/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Protobuf vs MessagePack: A Comparison of Data Serialization Formats</title>
-      <link>https://poyasharonlin.github.io/website/blog/protobuf-vs-msgpack/</link>
+      <link>http://localhost:8000/website/blog/protobuf-vs-msgpack/</link>
       <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://poyasharonlin.github.io/website/blog/protobuf-vs-msgpack/</guid>
+      <guid>http://localhost:8000/website/blog/protobuf-vs-msgpack/</guid>
       <description>User Behavior Tracking System Overview The overall user behavior tracking system consists of three main components:
  01 Data Collection 02 Data Processing 03 Data Storage 04 Data Analysis   01 Data Collection: This component is responsible for capturing user interactions and events Common Sampling Methods: Common sampling methods include fixed data point (Khan et al, 2024), e.g 5 data pts for 1 window regardless of time duration , fixed time interval (Khan et al, 2024 &amp;amp; Mazza at al, 2020), e.</description>
     </item>

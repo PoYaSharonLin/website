@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on </title>
-    <link>https://poyasharonlin.github.io/website/tags/</link>
+    <link>http://localhost:8000/website/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/website/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>msgpack</title>
-      <link>https://poyasharonlin.github.io/website/tags/msgpack/</link>
+      <link>http://localhost:8000/website/tags/msgpack/</link>
       <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://poyasharonlin.github.io/website/tags/msgpack/</guid>
+      <guid>http://localhost:8000/website/tags/msgpack/</guid>
       <description></description>
     </item>
     
     <item>
       <title>user-behavior</title>
-      <link>https://poyasharonlin.github.io/website/tags/user-behavior/</link>
+      <link>http://localhost:8000/website/tags/user-behavior/</link>
       <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://poyasharonlin.github.io/website/tags/user-behavior/</guid>
+      <guid>http://localhost:8000/website/tags/user-behavior/</guid>
       <description></description>
     </item>
     

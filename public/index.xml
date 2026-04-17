@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>https://poyasharonlin.github.io/website/</link>
+    <link>http://localhost:8000/website/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Protobuf vs MessagePack: A Comparison of Data Serialization Formats</title>
-      <link>https://poyasharonlin.github.io/website/blog/protobuf-vs-msgpack/</link>
+      <link>http://localhost:8000/website/blog/protobuf-vs-msgpack/</link>
       <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://poyasharonlin.github.io/website/blog/protobuf-vs-msgpack/</guid>
+      <guid>http://localhost:8000/website/blog/protobuf-vs-msgpack/</guid>
       <description>User Behavior Tracking System Overview The overall user behavior tracking system consists of three main components:
  01 Data Collection 02 Data Processing 03 Data Storage 04 Data Analysis   01 Data Collection: This component is responsible for capturing user interactions and events Common Sampling Methods: Common sampling methods include fixed data point (Khan et al, 2024), e.g 5 data pts for 1 window regardless of time duration , fixed time interval (Khan et al, 2024 &amp;amp; Mazza at al, 2020), e.</description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://poyasharonlin.github.io/website/project/</link>
+      <link>http://localhost:8000/website/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://poyasharonlin.github.io/website/project/</guid>
+      <guid>http://localhost:8000/website/project/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Publications</title>
-      <link>https://poyasharonlin.github.io/website/publication/</link>
+      <title>Research</title>
+      <link>http://localhost:8000/website/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://poyasharonlin.github.io/website/publication/</guid>
+      <guid>http://localhost:8000/website/research/</guid>
       <description></description>
     </item>
     

@@ -2,35 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://poyasharonlin.github.io/website/blog/</loc>
+    <loc>http://localhost:8000/website/blog/</loc>
     <lastmod>2026-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://poyasharonlin.github.io/website/</loc>
+    <loc>http://localhost:8000/website/</loc>
     <lastmod>2026-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://poyasharonlin.github.io/website/categories/</loc>
+    <loc>http://localhost:8000/website/categories/</loc>
     <lastmod>2026-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://poyasharonlin.github.io/website/categories/engineering/</loc>
+    <loc>http://localhost:8000/website/categories/engineering/</loc>
     <lastmod>2026-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://poyasharonlin.github.io/website/tags/msgpack/</loc>
+    <loc>http://localhost:8000/website/tags/msgpack/</loc>
     <lastmod>2026-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://poyasharonlin.github.io/website/blog/protobuf-vs-msgpack/</loc>
+    <loc>http://localhost:8000/website/blog/protobuf-vs-msgpack/</loc>
     <lastmod>2026-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://poyasharonlin.github.io/website/tags/</loc>
+    <loc>http://localhost:8000/website/tags/</loc>
     <lastmod>2026-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://poyasharonlin.github.io/website/tags/user-behavior/</loc>
+    <loc>http://localhost:8000/website/tags/user-behavior/</loc>
     <lastmod>2026-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://poyasharonlin.github.io/website/search/</loc>
+    <loc>http://localhost:8000/website/search/</loc>
     <lastmod>2024-10-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://poyasharonlin.github.io/website/project/</loc>
+    <loc>http://localhost:8000/website/project/</loc>
   </url><url>
-    <loc>https://poyasharonlin.github.io/website/publication/</loc>
+    <loc>http://localhost:8000/website/research/</loc>
   </url>
 </urlset>
