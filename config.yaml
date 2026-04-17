@@ -3,9 +3,9 @@ languageCode: en-us
 build:
   writeStats: true
 params:
-  title: Website
-  author: Darshan Baral
-  description: Website title
+  title: PoYaSharon Lin
+  author: PoYaSharon Lin
+  description: Personal website of PoYaSharon Lin
   copyright: >-
     Deployed on [GitHub Pages](https://pages.github.com/) 
   theme:

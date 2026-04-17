@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto light"><head>
+  <title>PoYaSharon Lin</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Personal website of PoYaSharon Lin" />
+<meta name="author" content="PoYaSharon Lin" />
+<meta name="generator" content="Hugo 0.92.2" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/website/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/website/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/website/favicon-16x16.png">        <link rel="manifest" href="/website/site.webmanifest">        <link rel="mask-icon" href="/website/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/website/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700;900&display=swap"
+  />
+
+  
+  
+    
+  
+  <link href="/website/main.min.269cdc81c66a78b5a206fa6030c4574daad8ccef24a60dfbc9881b0b8a31afd9.css" rel="stylesheet" />
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto w-full flex flex-col">
+    
+    <header class="border-b border-slate-200 dark:border-slate-700 mb-8">
+  <nav class="max-w-7xl mx-auto px-8 py-4 flex flex-row items-center justify-between">
+    <div class="flex flex-wrap gap-1">
+      <a class="nav-link text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white" href="https://poyasharonlin.github.io/website/">Home</a>
+      <a class="nav-link text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white" href="/website/publication">Publications</a>
+      <a class="nav-link text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white" href="/website/project">Projects</a>
+      <a class="nav-link text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white" href="/website/files/cv.pdf">CV</a>
+      <a class="nav-link text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white" href="/website/blog">Blog</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a class="text-slate-500 hover:text-slate-700 dark:hover:text-slate-300" href="/website/search">
+        <i class="fas fa-search"></i>
+      </a>
+      <button
+        class="text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 cursor-pointer"
+        onclick="lightDark(this)"
+        aria-label="Toggle dark mode"
+      >
+        <i class="fas fa-sun theme-toggle"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const lightDark = (el) => {
+    let html = document.querySelector("html");
+    let icon = el.querySelector("i");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      icon.classList.add("fa-moon");
+      icon.classList.remove("fa-sun");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      html.classList.add("dark");
+      icon.classList.add("fa-sun");
+      icon.classList.remove("fa-moon");
+      window.localStorage.setItem("theme", "dark");
+    }
+  };
+</script>
+
+    
+    <main class="grow">
+<div class="max-w-7xl mx-auto px-8 py-12">
+  <div class="prose prose-stone dark:prose-invert max-w-none">
+    <div class="mb-3">
+      <h1 class="top-h1" style="font-size: 2.75em">Protobuf vs MessagePack: A Comparison of Data Serialization Formats</h1>
+      <p class="mb-1">April 5, 2026</p>
+      <p>&mdash;</p>
+    </div>
+    <div class="content">
+      <h2 id="user-behavior-tracking-system-overview">User Behavior Tracking System Overview</h2>
+<p>The overall user behavior tracking system consists of three main components:</p>
+<ul>
+<li>01 Data Collection</li>
+<li>02 Data Processing</li>
+<li>03 Data Storage</li>
+<li>04 Data Analysis</li>
+</ul>
+<hr>
+<h3 id="01-data-collection-this-component-is-responsible-for-capturing-user-interactions-and-events">01 Data Collection: This component is responsible for capturing user interactions and events</h3>
+<p><em>Common Sampling Methods</em>:
+<!-- raw HTML omitted -->
+Common sampling methods include fixed data point (Khan et al, 2024), e.g 5 data pts for 1 window regardless of time duration , fixed time interval (Khan et al, 2024 &amp; Mazza at al, 2020), e.g. 60 fps sampling, 60 data pts per second, and event-based sampling (Weinmann et al , 2022), e.g. record data when user mouse movement changes.</p>
+<p><em>Our method &amp; rationale</em>:
+<!-- raw HTML omitted -->
+The collected data columns can be represented as a nested JSON structure, where:</p>
+<ul>
+<li>The outer keys correspond to the event type (e.g., mouse move, click, scroll).</li>
+<li>The inner objects (or arrays) contain the fixed pixel changes recorded under that specific event type (x, y, timestamp, event name, extra)</li>
+</ul>
+<p>Note that event type and event name are different. For example, event type can be &ldquo;PC&rdquo;, representing point and click, while event name can be &ldquo;Point&rdquo; or &ldquo;Click&rdquo;. For common event types, please refer to Khan et al, 2024.</p>
+<p>This design implements a hybrid sampling strategy that combines fixed time-interval sampling with event-based sampling. As a result, it is more efficient than fixed-data-point sampling and captures significantly more user interactions than pure fixed time-interval sampling alone.</p>
+<hr>
+<h3 id="02-data-processing-this-component-is-responsible-for-transforming-raw-data-into-a-format-suitable-for-uploding">02 Data Processing: This component is responsible for transforming raw data into a format suitable for uploding</h3>
+<p><em>Common Storage Methods</em>:
+<!-- raw HTML omitted -->
+Common data processing methods include data cleaning (e.g., handling missing values, removing outliers), data transformation (e.g., normalizing data, encoding categorical variables), and data aggregation (e.g., summarizing data at different levels of granularity) and decide the data type for storage (e.g., JSON, CSV, binary formats like msgpack).</p>
+<p><em>Our method &amp; rationale</em>:
+<!-- raw HTML omitted -->
+For our case, data cleaning is not necessary since we are collecting data at the pixel level, which is less likely to have missing values or outliers. However, we do need to transform the data into a format suitable for uploading. We choose to use MessagePack (msgpack) for data serialization because it is a binary format that is more compact and faster to serialize/deserialize compared to JSON. This choice allows us to efficiently handle the large volume of data generated by tracking user behavior at the pixel level.</p>
+<p><em>Protobuf v.s. Msgpack</em>:
+<!-- raw HTML omitted -->
+Protobuf is a language-neutral, platform-neutral, and extensible mechanism for serializing structured data. It offers excellent efficiency in both size and speed compared to JSON or XML. However, it requires a predefined schema and code generation for serialization/deserialization. This adds significant complexity whenever we need to add or modify columns in our nested event-based data structure.</p>
+<p>In contrast, MessagePack provides simple, schema-less serialization functions that work directly with native data structures (such as nested dictionaries). This makes it much easier to implement for our current use case and allows other developers to fork the project and make their own adjustments with minimal friction.</p>
+<p>Therefore, we have chosen MessagePack for its ease of use and superior flexibility when handling our specific hybrid (time-interval + event-based) data format. If in the future, an coperation with other teams requires a more standardized and efficient serialization format, we can consider switching to Protobuf. For now, MessagePack strikes the right balance between performance and customization for our user behavior tracking system.</p>
+<p>For detailed comparison between Protobuf and MessagePack, please refer to this article: <a href="./protobuf-vs-msgpack">Protobuf vs MessagePack</a>.</p>
+<hr>
+<h3 id="03-data-storage-once-the-data-is-collected-it-needs-to-be-stored-efficiently-for">03 Data Storage: Once the data is collected, it needs to be stored efficiently for</h3>
+<p><em>Common Storage Methods</em>:
+<!-- raw HTML omitted -->
+It is common to use self-owned relational databases (e.g., MySQL, PostgreSQL) or NoSQL databases (e.g., MongoDB, Cassandra) for storing user behavior data. The choice of database depends on factors such as the volume of data, the need for scalability, and the specific use cases for data retrieval and analysis.</p>
+<p>The other thought is to use 3rd party data storage services (e.g., AWS S3, Google Cloud Storage) for storing large volumes of user behavior data. These services offer scalability and durability, but may introduce additional costs and latency compared to self-managed databases.</p>
+<p><em>Our method &amp; rationale</em>:
+<!-- raw HTML omitted -->
+We choose Amazon S3 for data storage for a couple of reasons:</p>
+<ul>
+<li>Scalability: Amazon S3 can handle large volumes of data, which is essential for our case considering we monitor at 1 pixel level in a 5 mins survey session</li>
+<li>Streaming: Amazon S3 supports streaming data, which allows to upload the data while users are still interacting with the application, reducing the latency when they submit the survey</li>
+<li>Cost-effectiveness: Amazon S3 offers a pay-as-you-go pricing model, which can be more cost-effective for storing large volumes of data compared to self-managed databases.</li>
+</ul>
+<hr>
+<h3 id="04-data-analysis-this-component-is-responsible-for-analyzing-the-stored-data-to-extract-insights">04 Data Analysis: This component is responsible for analyzing the stored data to extract insights</h3>
+<hr>
+<h2 id="references">References</h2>
+<ol>
+<li>Khan, S., Devlen, C., Manno, M., &amp; Hou, D. (2024). Mouse dynamics behavioral biometrics: A survey. ACM Computing Surveys, 56(6), 1-33.</li>
+<li>Mazza, C., Monaro, M., Burla, F., Colasanti, M., Orrù, G., Ferracuti, S., &amp; Roma, P. (2020). Use of mouse-tracking software to detect faking-good behavior on personality questionnaires: an explorative study. Scientific reports, 10(1), 4835.</li>
+<li>Weinmann, M., Valacich, J. S., Schneider, C., Jenkins, J. L., &amp; Hibbeln, M. (2022). The path of the righteous: Using trace data to understand fraud decisions in real time. MIS Quarterly, 46(4), 2317-2336.</li>
+</ol>
+
+    </div>
+  </div>
+  <div class="flex flex-row justify-around my-2">
+  <h3 class="mb-1 mt-1 text-left mr-4">
+    
+    <i class="text-gray-300 dark:text-gray-600 fas fa-chevron-circle-left"></i>
+    
+  </h3>
+  <h3 class="mb-1 mt-1 text-left ml-4">
+    
+    <i class="text-gray-300 dark:text-gray-600 fas fa-chevron-circle-right"></i>
+    
+  </h3>
+</div>
+
+</div>
+
+    </main>
+    
+    <footer class="text-sm border-t border-gray-300 dark:border-gray-700  py-6 ">
+  <div class="max-w-7xl mx-auto px-8 text-center">
+    <p class="markdownify">Deployed on <a href="https://pages.github.com/">GitHub Pages</a></p>
+  </div>
+</footer>
+
+    
+  </body>
+</html>

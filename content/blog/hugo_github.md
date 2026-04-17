@@ -4,7 +4,7 @@ date: 2025-01-30
 tags: ["hugo", "githubpages"]
 categories: ["engineering"]
 description: "This blog is for those who want to build a personal website using a Hugo template rather than creating their own Hugo template from scratch. Therefore, this post will not delve deeply into Go but will focus on understanding the routing logic."
-draft: false
+draft: true
 ---
 
 ## 01 Why Hugo & GitHub Pages?

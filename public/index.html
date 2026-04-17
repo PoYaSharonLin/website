@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us" class="m-auto light"><head>
-  <title>Website</title>
+  <title>PoYaSharon Lin</title>
 
 <meta name="theme-color" content="" />
 <meta charset="utf-8" />
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<meta name="description" content="Website title" />
-<meta name="author" content="Darshan Baral" />
-<meta name="generator" content="aafu theme by Darshan in Hugo 0.92.2" />
+<meta name="description" content="Personal website of PoYaSharon Lin" />
+<meta name="author" content="PoYaSharon Lin" />
+<meta name="generator" content="Hugo 0.92.2" />
 
         <link rel="apple-touch-icon" sizes="180x180" href="/website/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/website/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/website/favicon-16x16.png">        <link rel="manifest" href="/website/site.webmanifest">        <link rel="mask-icon" href="/website/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/website/favicon.ico">
   <link
@@ -20,16 +20,18 @@
     rel="stylesheet"
     href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
   />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     rel="stylesheet"
-    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700;900&display=swap"
   />
 
   
   
     
   
-  <link href="/website/main.min.4bfc2153653be59189228e99fe5f5b339da9bb4ea76444bf88008dea8bc21db8.css" rel="stylesheet" />
+  <link href="/website/main.min.269cdc81c66a78b5a206fa6030c4574daad8ccef24a60dfbc9881b0b8a31afd9.css" rel="stylesheet" />
 
   <script>
     let html = document.querySelector("html");
@@ -71,36 +73,45 @@
     };
   </script>
 </head>
-<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+<body class="h-screen p-2 m-auto w-full flex flex-col">
     
-    <header
-  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"
->
-  <div>
-    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="https://poyasharonlin.github.io/website/">Home</a>    
-    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/website/blog">Blog</a>
-  </div>
-  <div>
-  <a class="mr-4" href="/website/search"><i class="fas fa-search"></i></i></a>
-  <i
-    class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
-    onclick="lightDark(this)"
-  ></i>
-</div>
+    <header class="border-b border-slate-200 dark:border-slate-700 mb-8">
+  <nav class="max-w-7xl mx-auto px-8 py-4 flex flex-row items-center justify-between">
+    <div class="flex flex-wrap gap-1">
+      <a class="nav-link text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white" href="https://poyasharonlin.github.io/website/">Home</a>
+      <a class="nav-link text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white" href="/website/publication">Publications</a>
+      <a class="nav-link text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white" href="/website/project">Projects</a>
+      <a class="nav-link text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white" href="/website/files/cv.pdf">CV</a>
+      <a class="nav-link text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white" href="/website/blog">Blog</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a class="text-slate-500 hover:text-slate-700 dark:hover:text-slate-300" href="/website/search">
+        <i class="fas fa-search"></i>
+      </a>
+      <button
+        class="text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 cursor-pointer"
+        onclick="lightDark(this)"
+        aria-label="Toggle dark mode"
+      >
+        <i class="fas fa-sun theme-toggle"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 
 <script>
   const lightDark = (el) => {
     let html = document.querySelector("html");
+    let icon = el.querySelector("i");
     if (html.classList.contains("dark")) {
       html.classList.remove("dark");
-      el.classList.add("fa-moon");
-      el.classList.remove("fa-sun");
+      icon.classList.add("fa-moon");
+      icon.classList.remove("fa-sun");
       window.localStorage.setItem("theme", "light");
     } else {
       html.classList.add("dark");
-      el.classList.add("fa-sun");
-      el.classList.remove("fa-moon");
+      icon.classList.add("fa-sun");
+      icon.classList.remove("fa-moon");
       window.localStorage.setItem("theme", "dark");
     }
   };
@@ -108,297 +119,79 @@
 
     
     <main class="grow">
-<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
-  <div class="col-span-2">
-    <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2">
-      <div class="flex flex-col justify-center">
-        <div class=""><div class="w-100 h-100 flex justify-center p-4">
+
+<div class="max-w-7xl mx-auto px-8 py-12">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    
+    
+    <div class="col-span-1">
+      <div class="profile-section sticky top-8">
+        <div class="text-center">
+          <div class="flex justify-center p-4">
   <img
-    class="rounded rounded-full"
+    class="profile-photo rounded-lg w-40 h-auto"
     src="/website/images/profile.jpg"
-    alt="Darshan Baral"
-    style="max-width: 250px"
+    alt="PoYaSharon Lin"
   />
 </div>
-</div>
-        <div class="p-2 text-center">
-          <h1 class="mb-0">Po-Ya, Lin</h1>
-<h2 class="mb-0"></h2>
-<h3 class="mb-4">Hsin Chu, Taiwan</h3>
-<div class="mb-4 flex flex-wrap justify-center">
+
+          <h1 class="text-2xl font-bold mt-4 mb-1">Po-Ya, Lin</h1>
+          <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Hsin Chu, Taiwan</p>
+          
+          <div class="my-4">
+            <div class="mb-6 flex flex-wrap justify-center gap-3">
   
-  <div class="mx-2">
-    <a class="text-2xl" href="https://github.com/PoYaSharonLin">
-      <i class="mt-1 fab fa-github"></i>
+  <div class="group">
+    <a href="https://github.com/PoYaSharonLin" class="social-link block" title="GitHub">
+      <i class="text-xl fab fa-github"></i>
     </a>
   </div>
   
-  <div class="mx-2">
-    <a class="text-2xl" href="https://orcid.org/0009-0002-7468-1526">
-      <i class="mt-1 fab fa-orcid"></i>
+  <div class="group">
+    <a href="https://orcid.org/0009-0002-7468-1526" class="social-link block" title="Orcid">
+      <i class="text-xl fab fa-orcid"></i>
     </a>
   </div>
   
 </div>
- <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  pt-2 ">
-  <p class="markdownify">Deployed on<a href="https://pages.github.com/">GitHub Pages</a></p>
-  <p >
-    <i>
-      <a href="https://github.com/darshanbaral/aafu">
-        aafu
-      </a>
-    </i>
-    by
-    <a href="https://www.darshanbaral.com/">
-      darshan
-    </a>
-  </p>
+
+          </div>
+          
+          <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-700">
+            <footer class="text-sm border-t border-gray-300 dark:border-gray-700  pt-2 ">
+  <div class="max-w-7xl mx-auto px-8 text-center">
+    <p class="markdownify">Deployed on <a href="https://pages.github.com/">GitHub Pages</a></p>
+  </div>
 </footer>
 
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="col-span-3 relative">
     
-    <div class="px-2">
-      <h2 class="my-0 accordion active">
-        
-        <p
-          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
-          onclick="expandAccordion(this)"
-          style="cursor: pointer"
-        >
-          <i class="fas fa-user"></i>
-          About Me</p>
-      </h2>
+    
+    <div class="col-span-3">
+      
+      
+      <section class="mb-10">
+        <h2 class="section-header">About</h2>
+        <div class="text-slate-700 dark:text-slate-300 leading-relaxed">
+          <p>I am a Master&rsquo;s student in Technology Management at National Tsing Hua University, specializing in AI-driven analytics and data-driven decision-making for business contexts. My interdisciplinary background bridges technical innovation with real-world economic impacts, particularly through the integration of user-generated content, social signals, and advanced natural language processing (NLP) techniques into predictive and platform-based systems.</p>
+<p>A key contribution is my NSTC-funded publication on hybrid electric vehicle sales forecasting, where an ANFIS model incorporating electronic word-of-mouth (E-WOM) sentiment and volume features—extracted via NLP-driven text analysis—outperformed traditional approaches. This work highlights how online social data and review signals enhance sales prediction accuracy in dynamic markets, aligning with empirical investigations into the business value of user-generated content.</p>
+<p>At Micron Technology, I developed internal tools using Autogen LLMs and Plotly dashboards for real-time semiconductor production analysis and forecasting, reducing query response times by 75% via optimized caching—demonstrating scalable AI applications that boost organizational productivity in high-stakes industries.</p>
+<p>My open-source projects further explore digital platforms, user interactions, and NLP applications:</p>
+<p><strong>AcaRadar</strong>: A full-stack web app enabling interest-based retrieval of arXiv metadata through text embeddings and semantic search (leveraging NLP for personalized information discovery), architected with domain-driven design, RESTful APIs, and AWS SQS for resilient microservices—addressing challenges in cross-domain scholarly productivity and collective intelligence in academic platforms.</p>
+<p><strong>MindBigData</strong>: An interactive EEG classification tool deploying PyTorch models via Streamlit, facilitating real-time experimentation with multimodal human-AI interfaces.</p>
 
-      <div
-        class="panel overflow-hidden px-2 ml-2"
+        </div>
+      </section>
+      
+      
+      
         
-      >
-        <div class=""><p class="markdownify">
-  <p>I am Po-Ya Lin, an NLP enthusiast with a focus on <strong>natural language understanding</strong> and <strong>computational pragmatics</strong>.
-My work includes sentiment analysis in Mandarin text, fine-tuning BERT for text classification. <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p>I gained hands-on experience in <strong>intent detection</strong> while working as a Customer Support AI Chat Intern,
-where I improved chatbot performance by enhancing Name Entity Recognition under the category of complaint and adding multiple condition keywords. My current research focus is <strong>&ldquo;Computational Pragmatics Understanding: Intent Classification Using Knowledge Graphs with BERT.&quot;</strong> <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-
-</p>
-</div>
-      </div>
+      
+      
     </div>
-    
-    <div class="px-2">
-      <h2 class="my-0 accordion">
-        
-        <p
-          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
-          onclick="expandAccordion(this)"
-          style="cursor: pointer"
-        >
-          <i class="fas fa-briefcase"></i>
-          Experiences</p>
-      </h2>
-
-      <div
-        class="panel overflow-hidden px-2 ml-2"
-        
-      >
-        <div class="">
-<h4 style="text-decoration: underline;">Customer Support AI Chat Intern</h4>
-<p class="mb-0">
-  2022/07 - 2022/09 &middot;  Hotai Motor 
-</p>
-
-<div class="prose prose-stone dark:prose-invert max-w-none">
-<ul>
-<li>AI Chatbot model performance improved from <strong>95% to 97%</strong> after utilizing the following adjustments</li>
-<li>N-gram analysis for the &ldquo;complaint&rdquo; category using <strong>Antconc</strong> and applying <strong>Name Entity Recognition</strong></li>
-<li>Added multi-condition complaint detection by retraining customers' requests about the frequent malfunction of components</li>
-</ul>
-
-</div>
-
-
-
-</div>
-      </div>
-    </div>
-    
-    <div class="px-2">
-      <h2 class="my-0 accordion">
-        
-        <p
-          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
-          onclick="expandAccordion(this)"
-          style="cursor: pointer"
-        >
-          <i class="fas fa-graduation-cap"></i>
-          Education</p>
-      </h2>
-
-      <div
-        class="panel overflow-hidden px-2 ml-2"
-        
-      >
-        <div class="">
-
-<h4 style="text-decoration: underline;">M.S. in Technology Management</h4>
-<p >2024 - Current &middot; National Tsing Hua University, Taiwan</p>
-
-
-
-<h4 style="text-decoration: underline;">B.A. in Foreign Language and Literature</h4>
-<p class="mb-0" >2019 - 2024 &middot; National Cheng Kung University, Taiwan</p>
-
-
-<p>
-  Thesis:
-  <a href="https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"><i>Hybrid Electric Vehicle Sales Prediction: Using ANN, ANFIS, and Electronic Word of Mouth</i></a>
-</p>
-
-
-
-</div>
-      </div>
-    </div>
-    
-    <div class="px-2">
-      <h2 class="my-0 accordion">
-        
-        <p
-          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
-          onclick="expandAccordion(this)"
-          style="cursor: pointer"
-        >
-          <i class=""></i>
-          </p>
-      </h2>
-
-      <div
-        class="panel overflow-hidden px-2 ml-2"
-        
-      >
-        <div class="">
-
-</div>
-      </div>
-    </div>
-    
-    <div class="px-2">
-      <h2 class="my-0 accordion">
-        
-        <p
-          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
-          onclick="expandAccordion(this)"
-          style="cursor: pointer"
-        >
-          <i class="fas fa-project-diagram"></i>
-          Projects</p>
-      </h2>
-
-      <div
-        class="panel overflow-hidden px-2 ml-2"
-        
-      >
-        <div class="">
-<h4>
-  <a href="https://drive.google.com/file/d/1ZYTvsvyhrtboKDprvE_tktB-VFKohbBz/view?usp=sharing">Electronic Direct Mail Precision Marketing</a>
-</h4>
-<p class="markdownify indent-8"><p>• Utilized XGBoost to predict subscription likelihood based on user information and behavior. <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p>• Used SMOTE to handle data imbalance. <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p>• Leveraged <strong>BERT</strong> to assess the likelihood of an <strong>email subject</strong> line leading to an unsubscription. <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-</p>
-
-<h4>
-  <a href="https://drive.google.com/file/d/1sH8mLJBQgHYu6ajCrAUo0TlqGPwIRViq/view">Satellite Cloud Image prediction using ConvLSTM</a>
-</h4>
-<p class="markdownify indent-8"><p>• The project Apply <strong>ConLSTM to predict the movement of the infrared cloud image</strong> and use MAE, MSE, SSIM, PSNR as performance evaluation. <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p>• Compared to ConLSTM, Self-attention LSTM may not be as effective as expected due to the characteristics of cloud cluster movement. <!-- raw HTML omitted --><!-- raw HTML omitted -->
-(only moves around one specific local area at 10-minute intervals.) <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-</p>
-
-</div>
-      </div>
-    </div>
-    
-    <div class="px-2">
-      <h2 class="my-0 accordion">
-        
-        <p
-          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
-          onclick="expandAccordion(this)"
-          style="cursor: pointer"
-        >
-          <i class="fas fa-cogs"></i>
-          Skills</p>
-      </h2>
-
-      <div
-        class="panel overflow-hidden px-2 ml-2"
-        
-        id="skill-panel"
-        
-      >
-        <div class=""><script>
-  let skillPanel = document.querySelector("#skill-panel")
-    .previousElementSibling;
-  skillPanel.addEventListener("click", function() {
-    let skillBars = document.querySelectorAll("#skill-percent");
-    skillBars.forEach(elem => {
-      elem.style.width = elem.classList[0];
-    });
-  });
-</script>
-
-<code>Python</code>
-<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
-  <div id="skill-percent" class="60% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
-</div>
-
-<code>Hugo(Go)</code>
-<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
-  <div id="skill-percent" class="40% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
-</div>
-
-<code>NextJS(Typescript)</code>
-<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
-  <div id="skill-percent" class="30% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
-</div>
-
-</div>
-      </div>
-    </div>
-    
-    <div class="px-2">
-      <h2 class="my-0 accordion">
-        
-        <p
-          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
-          onclick="expandAccordion(this)"
-          style="cursor: pointer"
-        >
-          <i class="fas fa-gamepad"></i>
-          Hobbies</p>
-      </h2>
-
-      <div
-        class="panel overflow-hidden px-2 ml-2"
-        
-      >
-        <div class=""><ul class="pl-0">
-  
-  <li class="list-unstyled mb-2">Cooking</li>
-  
-  <li class="list-unstyled mb-2">Baking</li>
-  
-</ul>
-</div>
-      </div>
-    </div>
-    
-
-    <script src="/website/js/accordion.js"></script>
   </div>
 </div>
 

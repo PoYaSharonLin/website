@@ -4,7 +4,7 @@ date: 2025-02-09
 tags: ["langchain"]
 categories: ["design"]
 description: "This blog is for those who want to learn LangChain from scratch. This LangChain series covers an introduction to LangChain, its applications, and some popular libraries."
-draft: false
+draft: true
 ---
 
 ## 01 What is LangChain? 

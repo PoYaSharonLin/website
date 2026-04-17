@@ -4,7 +4,7 @@ date: 2025-02-15
 tags: ["pytorch"]
 categories: ["design"]
 description: "This blog is for those who want to learn PyTorch from scratch. This PyTorch series covers an introduction to PyTorch, its applications, and some popular libraries."
-draft: false
+draft: true
 ---
 
 ## 01 Introduction

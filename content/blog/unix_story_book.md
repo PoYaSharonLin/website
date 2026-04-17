@@ -4,7 +4,7 @@ date: 2025-09-02
 tags: ["UNIX", "OS"]
 categories: ["engineering"]
 description: "This blog is for those who are not familiar with Linux/UNIX. This tutorial serves as a story book providing visualizations to read along with the original resources: https://linuxtut.netlify.app/ "
-draft: false
+draft: true
 ---
 
 ##  UNIX Introduction
