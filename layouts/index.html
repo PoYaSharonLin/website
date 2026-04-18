@@ -25,17 +25,7 @@
     <!-- Main Content -->
     <div class="col-span-3">
       
-      <!-- About Section -->
-      <section class="mb-10">
-        <h2 class="section-header">About</h2>
-        <div class="text-slate-700 dark:text-slate-300 leading-relaxed">
-          {{ .Site.Params.aboutme.description | markdownify }}
-        </div>
-      </section>
-      
-      <!-- Additional Accordion Sections (if any beyond aboutme) -->
       {{ range $index, $item := .Site.Params.showInAccordion }}
-        {{ if ne $item.item "aboutme" }}
         {{ $current := index $.Site.Params $item.item }}
         <section class="mb-10">
           <h2 class="section-header flex items-center gap-2">
@@ -46,7 +36,6 @@
             {{ partial (print "accordion/" $item.item) $ }}
           </div>
         </section>
-        {{ end }}
       {{ end }}
       
     </div>

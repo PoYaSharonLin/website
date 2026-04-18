@@ -1,6 +1,9 @@
 {{ range .Site.Params.education.list }}
 
-<h4 style="text-decoration: underline;">{{ .degree }}</h4>
+<h4 class="flex items-center gap-2">
+  {{ if .logo }}<img src="{{ .logo }}" alt="" class="inline-block h-6 w-6 object-contain">{{ end }}
+  {{ .degree }}
+</h4>
 <p {{ if .thesis_title }}class="mb-0" {{ end }}>
   {{- .dates }} &middot; {{ .college -}}
 </p>
@@ -15,5 +18,10 @@
   Thesis: <i>{{ .thesis_title }}</i>
 </p>
 {{ end }}
+{{ end }}
+{{ if .description }}
+<div class="text-slate-600 dark:text-slate-300">
+  {{ .description | markdownify | safeHTML }}
+</div>
 {{ end }}
 {{ end }}

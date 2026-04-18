@@ -52,24 +52,22 @@ params:
       #   url: "#"
       #   title: ResearchGate
   showInAccordion:
+    - item: education
     - item: aboutme
       expand: true
   aboutme:
     title: About Me
     icon: fas fa-user
     description: |
-      I am a Master's student in Technology Management at National Tsing Hua University, specializing in AI-driven analytics and data-driven decision-making for business contexts. My interdisciplinary background bridges technical innovation with real-world economic impacts, particularly through the integration of user-generated content, social signals, and advanced natural language processing (NLP) techniques into predictive and platform-based systems.
+      I am a MBA student from National Tsing Hua University, Taiwan, interested in natural language understanding, multimodal signal processing, 
+      and human behavior modeling — driven by a core question: how do different signals encode meaning?, 
+      and how can we detect when that meaning is accurate? My research interests leads me to journeys empassing 
+      semantic analysis, satellite image, and biosignal analysis. 
 
-      A key contribution is my NSTC-funded publication on hybrid electric vehicle sales forecasting, where an ANFIS model incorporating electronic word-of-mouth (E-WOM) sentiment and volume features—extracted via NLP-driven text analysis—outperformed traditional approaches. This work highlights how online social data and review signals enhance sales prediction accuracy in dynamic markets, aligning with empirical investigations into the business value of user-generated content.
-
-      At Micron Technology, I developed internal tools using Autogen LLMs and Plotly dashboards for real-time semiconductor production analysis and forecasting, reducing query response times by 75% via optimized caching—demonstrating scalable AI applications that boost organizational productivity in high-stakes industries.
-
-      My open-source projects further explore digital platforms, user interactions, and NLP applications:
-
-      **AcaRadar**: A full-stack web app enabling interest-based retrieval of arXiv metadata through text embeddings and semantic search (leveraging NLP for personalized information discovery), architected with domain-driven design, RESTful APIs, and AWS SQS for resilient microservices—addressing challenges in cross-domain scholarly productivity and collective intelligence in academic platforms.
-
-      **MindBigData**: An interactive EEG classification tool deploying PyTorch models via Streamlit, facilitating real-time experimentation with multimodal human-AI interfaces.
-
+      I am now seeking a PhD position in Information System where I can contribute to the 
+      detection of self-reporting data, 
+      bringing together my background in multimodal signal processing, behavioral trace data, and 
+      applied machine learning. 
 
   experience:
     title: Experiences
@@ -95,17 +93,27 @@ params:
       #   dates: 2013 - 2018
         # thesis_title: "Intention Understanding: Using Knowledge Graph and Stakeholders map to improve computer pragmatic understanding"
       #   thesis_url: "#"
-      - degree: M.S. in Technology Management
+      - degree: MBA in Technology Management
         college: National Tsing Hua University, Taiwan
         dates: 2024 - Present
-        # thesis_title: "Intention Understanding: Using Knowledge Graph and Stakeholders map to improve computational pragmatic understanding"
+        logo: https://www.nthu.edu.tw//public/images/about10/cis-1-1.jpg
+        thesis_title: "Reducing Misreporting of Health Information through Novel Positive Appeals. Evidence from Mouse-Tracking Recognition"
         # thesis_url: "#"
-        description: 
-      - degree: B.A. in Foreign Language and Literature 
+        description:
+      - degree: Exchange Student in Department of Technology Management
+        college: Technical University of Munich, Germany
+        dates: Apr - Sept 2023
+        logo: "https://github.com/iwb.png?size=256"
+        description: |
+          • German Scale: 1.3 (3.9/4.0 GPA)
+
+          • Relevant Coursework: Business Analytics (A/A+), Reinforcement Learning (A/A+)
+      - degree: B.A. in Foreign Language and Literature
         college: National Cheng Kung University, Taiwan
         dates: 2019 - 2024
+        logo: https://web.ncku.edu.tw/var/file/0/1000/img/1215/ncku-logo1.jpg
         thesis_title: "Hybrid Electric Vehicle Sales Prediction: Using ANN, ANFIS, and Electronic Word of Mouth"
-        thesis_url: "https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"
+        # thesis_url: "https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"
         description: |
           The thesis aims to evaluate how well the search volume and the overall sentiment score of posts on a Mandarin online mobile forum would affect the prediction of sales of hybrid electric vehicles. <br><br>
           The result revealed that the electronic Word-of-mouth data does not substantially improve the sales prediction of Hybrid Electric Vehicle.
@@ -130,11 +138,11 @@ params:
   #   icon: fas fa-graduation-cap
   #   list:
   publication:
-    title: Publications
+    title: Research
     icon: fas fa-book
     list:
       - title: "Hybrid Electric Vehicle Sales Prediction using ANN, ANFIS, and E-Word-of-Mouth"
-        url: "https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"
+        # url: "https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"
         description: |
           • Achieved highest accuracy with ANFIS model incorporating E-WOM sentiment and volume features
           
@@ -144,34 +152,26 @@ params:
   project:
     title: Projects
     icon: fas fa-project-diagram
-    list:
-      - title: Electronic Direct Mail Precision Marketing
-        url: "https://drive.google.com/file/d/1ZYTvsvyhrtboKDprvE_tktB-VFKohbBz/view?usp=sharing"
-        description: |
-          • Utilized XGBoost to predict subscription likelihood based on user information and behavior. <br><br>
+    sections:
+      - section: Textual Analysis
+        list:
+          - title: Electronic Direct Mail Precision Marketing
+            # url: "https://drive.google.com/file/d/1ZYTvsvyhrtboKDprvE_tktB-VFKohbBz/view?usp=sharing"
+            description: |
+              • Utilized XGBoost to predict subscription likelihood based on user information and behavior. <br><br>
 
-          • Used SMOTE to handle data imbalance. <br><br> 
+              • Used SMOTE to handle data imbalance. <br><br>
 
-          • Leveraged **BERT** to assess the likelihood of an **email subject** line leading to an unsubscription. <br><br>
+              • Leveraged **BERT** to assess the likelihood of an **email subject** line leading to an unsubscription. <br><br>
+      - section: Image Analysis
+        list:
+          - title: Satellite Cloud Image prediction using ConvLSTM
+            url: "https://drive.google.com/file/d/1sH8mLJBQgHYu6ajCrAUo0TlqGPwIRViq/view"
+            description: |1-
+              • Applied **ConvLSTM to predict the movement of the infrared cloud image** and used MAE, MSE, SSIM, PSNR as performance evaluation. <br><br>
 
-
-        # description: |-
-        #   - Used XGBoost to predict whether a user will un-subscribe, especially based on email domain and the app used and generate feature importance
-        #   - Applied BERT to generate the possibility of being un-subscribed and used SMOTE to handle data imbalance
-      - title: Satellite Cloud Image prediction using ConvLSTM
-        url: "https://drive.google.com/file/d/1sH8mLJBQgHYu6ajCrAUo0TlqGPwIRViq/view"
-        description: |1-
-          • Applied **ConvLSTM to predict the movement of the infrared cloud image** and used MAE, MSE, SSIM, PSNR as performance evaluation. <br><br>
-
-
-          • Compared to ConLSTM, Self-attention LSTM may not be as effective as expected due to the characteristics of cloud cluster movement. <br><br>
-          (only moves around one specific local area at 10-minute intervals.) <br><br>
-      # - title: Project 3
-      #   url: "#"
-      #   description: Description of the project
-      # - title: Project 4
-      #   url: "#"
-      #   description: Description of the project
+              • Compared to ConLSTM, Self-attention LSTM may not be as effective as expected due to the characteristics of cloud cluster movement. <br><br>
+              (only moves around one specific local area at 10-minute intervals.) <br><br>
   skill:
     title: Skills
     panelId: skill-panel
