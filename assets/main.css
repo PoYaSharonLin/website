@@ -136,6 +136,11 @@
       }
     }
   }
+
+  mark {
+    @apply bg-yellow-100 text-slate-800 px-1 py-0.5 rounded font-medium;
+    @apply dark:bg-yellow-900/40 dark:text-yellow-200;
+  }
 }
 
 /* Search input */
@@ -215,6 +220,11 @@
 }
 .entry-title {
   @apply text-lg font-semibold text-slate-800 dark:text-slate-100 mb-1;
+}
+.entry-title a:not([href]),
+.entry-title a[href=""] {
+  @apply text-slate-700 dark:text-slate-200;
+  pointer-events: none;
 }
 .entry-meta {
   @apply text-sm text-slate-500 dark:text-slate-400 mb-2;

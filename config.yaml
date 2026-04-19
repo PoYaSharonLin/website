@@ -2,6 +2,10 @@ baseURL: https://poyasharonlin.github.io/website/
 languageCode: en-us
 build:
   writeStats: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 params:
   title: PoYaSharon Lin
   author: PoYaSharon Lin
@@ -59,9 +63,9 @@ params:
     title: About Me
     icon: fas fa-user
     description: |
-      I am a MBA student from National Tsing Hua University, Taiwan, interested in natural language understanding, multimodal signal processing, 
-      and human behavior modeling — driven by a core question: how do different signals encode meaning?, 
-      and how can we detect when that meaning is accurate? My research interests leads me to journeys empassing 
+      I am a MBA student from National Tsing Hua University, Taiwan, interested in <mark> natural language understanding </mark>, <mark> multimodal signal processing </mark>, 
+      and <mark> human behavior modeling </mark> — driven by a core question: how do different signals encode meaning?
+      and how can we detect whether the meaning is accurate? My research interests leads me to journeys empassing 
       semantic analysis, satellite image, and biosignal analysis. 
 
       I am now seeking a PhD position in Information System where I can contribute to the 
@@ -115,8 +119,7 @@ params:
         thesis_title: "Hybrid Electric Vehicle Sales Prediction: Using ANN, ANFIS, and Electronic Word of Mouth"
         # thesis_url: "https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"
         description: |
-          The thesis aims to evaluate how well the search volume and the overall sentiment score of posts on a Mandarin online mobile forum would affect the prediction of sales of hybrid electric vehicles. <br><br>
-          The result revealed that the electronic Word-of-mouth data does not substantially improve the sales prediction of Hybrid Electric Vehicle.
+
   # experience:
   #   title: Experiences
   #   icon: fas fa-briefcase
@@ -142,13 +145,32 @@ params:
     icon: fas fa-book
     list:
       - title: "Hybrid Electric Vehicle Sales Prediction using ANN, ANFIS, and E-Word-of-Mouth"
-        # url: "https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"
+        url: "https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"
+        logo: https://web.ncku.edu.tw/var/file/0/1000/img/1215/ncku-logo1.jpg
         description: |
-          • Achieved highest accuracy with ANFIS model incorporating E-WOM sentiment and volume features
-          
-          • Demonstrated significant forecasting improvements via social media signal integration
-          
-          • NSTC 112-2813-C-006-026-H 2
+          *Period:* 2023/07/01 to 2024/02/29 (8 months)
+
+          *National Science and Technology Council (NSTC) Project Number:* NSTC 112-2813-C-006-026-H 2
+
+          *Summary:*
+
+          Hybrid Electric Vehicles (HEVs) dominate Taiwan's electrified vehicle market starting from 2021, 
+          yet most sales forecasting research focuses on traditional statistical model and past sales data, 
+          leaving a gap in understanding whether appling neural network models and <mark> online consumer signals </mark> improves the prediction accuracy in HEV demand. 
+          The researchers trained both classical Artificial Neural Network (ANN) and 
+          an Adaptive Neuro-Fuzzy Inference System (ANFIS) on 16 <mark> macroeconomic </mark> and 
+          <mark> raw material indicators </mark>, then tested whether adding e-WOM data — 
+          <mark> sentiment scores </mark> from the Mobile01 forum and <mark> Google Search Trends </mark> — 
+          improved forecast accuracy, measured by MAPE. Contrary to prior literature, 
+          ANFIS performed substantially worse than ANN (82% vs. 24% MAPE), 
+          and incorporating e-WOM did not consistently reduce prediction error. 
+          However, this may reflect the limitations of the data source 
+          rather than a fundamental weakness of e-WOM itself — Mobile01, 
+          while Taiwan's largest auto forum, captures only a narrow slice of 
+          online consumer discourse and may skew toward enthusiasts 
+          rather than the broader HEV buying public. 
+          Future work incorporating a wider range of platforms — 
+          such as PTT, Dcard, or social media — may yet vindicate e-WOM as a meaningful predictor of HEV sales.
   project:
     title: Projects
     icon: fas fa-project-diagram
@@ -157,21 +179,106 @@ params:
         list:
           - title: Electronic Direct Mail Precision Marketing
             # url: "https://drive.google.com/file/d/1ZYTvsvyhrtboKDprvE_tktB-VFKohbBz/view?usp=sharing"
+            logo: https://cw-static.kdan.com/preparing/5494b79cde2e414a95177b63de8ef1b7/c9e64fa6-ef03-4bd9-b3b3-d093cfc840dc/preparing/infra/KDAN%20Vertical%20Color%20Primary_RGB.svg
             description: |
-              • Utilized XGBoost to predict subscription likelihood based on user information and behavior. <br><br>
+              *Period:* 2022/02 to 2022/06 (5 months)
 
-              • Used SMOTE to handle data imbalance. <br><br>
+              *Unit:* Software Development Club, National Cheng Kung University & Kdan Mobile
 
-              • Leveraged **BERT** to assess the likelihood of an **email subject** line leading to an unsubscription. <br><br>
+              *Summary:*
+
+              Email marketing team face a persistent challenge in reducing subscriber churn,
+              yet most approaches rely on intuition rather than data-driven insight into 
+              what specific content patterns actually trigger unsubscribes. 
+              The team analyzed EDM (Electronic Direct Mail) campaign data by combining three methods: 
+              <mark> frequency-based context analysis </mark> to identify high-risk subject line patterns, 
+              <mark> a Logistic Regression and XGBoost model </mark> using subscriber attributes (app, email domain, spam complaint history) 
+              to predict unsubscribe likelihood, and a BERT text classification model to score any new subject line's churn risk before sending.
+              The <mark> context analysis revealed that recurring templates such as "Tips of [Month]," "Tips & Tricks," discount-heavy exclamation-point subject lines, and "New + !" 
+              announcements were disproportionately associated with unsubscribes </mark>, while the XGBoost model achieved 85% accuracy and the BERT model reached 93% F1-score even
+              when trained on only 20,000 records. Together, these tools give content creators actionable guardrails — 
+              both a set of subject line templates to avoid and a real-time scoring system — that could meaningfully reduce unsubscribe rates 
+              if integrated into the campaign workflow before emails are sent.
+          
+          - title: Micron Summer Internship, Business Planning Intern
+            url: https://github.com/PoYaSharonLin/BPMia
+            logo: https://tw.micron.com/content/dam/micron/connectedassets/micron/global/logos/micron-logo-black-tm-rgb.png
+            description:  |1-
+              *Period:* 2025/07/01 to 2025/08/31 (2 months)
+
+              *Unit:* Project Management Office, Micron Inc, Taiwan.
+
+              *Summary:*
+
+              Business planning teams at semiconductor companies like Micron face a fragmented workflow — 
+              production forecasting data, internal documentation, and personal task tracking are typically 
+              siloed across separate tools, forcing employees to context-switch constantly and 
+              making it hard to surface relevant internal resources quickly. 
+              BPMia, built during a summer internship under Micron Taiwan's Project Management Office, 
+              addresses this by combining three capabilities into a single Streamlit web app: 
+              <mark> interactive wafer production forecasting visualization </mark>, a <mark> Retrieval-Augmented Generation (RAG) agent </mark>
+              powered by Google Gemini that answers questions grounded in internal documents, 
+              and a <mark> personal action items tracker </mark>. The result is a unified internal productivity tool that lets 
+              business planners query production trends, locate internal portals and 
+              resources through natural language, and manage follow-up tasks — all within one interface. 
+              While the project is scoped as an intern prototype rather than a production system, 
+              its architecture — <mark> modular pages </mark>, and <mark> document ingestion pipelines </mark> 
+              — provides a reusable foundation that future teams could extend with additional data 
+              sources or tighter integration into Micron's existing planning infrastructure.
+
+
+
       - section: Image Analysis
         list:
           - title: Satellite Cloud Image prediction using ConvLSTM
             url: "https://drive.google.com/file/d/1sH8mLJBQgHYu6ajCrAUo0TlqGPwIRViq/view"
+            logo: https://web.ncku.edu.tw/var/file/0/1000/img/1215/ncku-logo1.jpg
             description: |1-
-              • Applied **ConvLSTM to predict the movement of the infrared cloud image** and used MAE, MSE, SSIM, PSNR as performance evaluation. <br><br>
+              *Period:* 2022/02 to 2022/06 (5 months)
 
-              • Compared to ConLSTM, Self-attention LSTM may not be as effective as expected due to the characteristics of cloud cluster movement. <br><br>
-              (only moves around one specific local area at 10-minute intervals.) <br><br>
+              *Unit:* Department of Geomatics, National Cheng Kung University
+
+              *Summary:*
+
+              Accurate short-term prediction of satellite cloud imagery is critical for weather forecasting, 
+              yet generating reliable future frames from spatiotemporal sequences remains a challenging deep learning problem.
+              The team framed cloud movement as a spatiotemporal sequence prediction task and trained a <mark> ConvLSTM model </mark>— 
+              along with a <mark> Self-Attention-ConvLSTM variant </mark>  — on two distinct datasets from the Himawari-8 satellite: 
+              Japan visible channel images and Taiwan infrared channel images, then systematically compared three loss functions 
+              (MSE, MAE, and SSIM) across four evaluation metrics (MSE, MAE, SSIM, and PSNR). ConvLSTM consistently outperformed 
+              Self-Attention-ConvLSTM in both visual quality and quantitative metrics, and while all three loss functions 
+              successfully captured the general direction of cloud movement in the Japan visible channel dataset, 
+              none dominated across all four evaluations — and the models <mark> struggled more noticeably with the Taiwan infrared channel data </mark>, 
+              where cloud movement trends were harder to learn. These findings suggest that loss function selection should be matched to 
+              the specific evaluation criterion and image type of interest, and that the added <mark>complexity of self-attention does not 
+              automatically improve spatiotemporal cloud prediction</mark>, pointing to the need for more targeted architectural choices 
+              depending on the satellite channel and geographic region.
+
+          - title: MNISTMindBigData
+            url: https://github.com/PoYaSharonLin/MNISTMindBigData
+            logo: https://www.nthu.edu.tw//public/images/about10/cis-1-1.jpg
+            description: |1-
+              *Period:* 2025/02 to 2025/06 (5 months)
+
+              *Unit:* Institute of Information Systems and Applications, National Tsing Hua University
+
+              *Summary:*
+
+              Classifying EEG signals into digit categories is an open problem in Brain-Computer Interface research — 
+              prior work on the MindBigData dataset has reported accuracies as low as 10–17%, largely due to <mark> high noise, 
+              low signal-to-noise ratio, and insufficient artifact removal </mark>. The project applied a multi-stage preprocessing pipeline 
+              — <mark> bandpass filtering (1–40 Hz), Artifact Subspace Reconstruction (ASR), and Independent Component Analysis (ICA) </mark>
+              — to the 64,344-trial MindBigData-EP dataset, then trained both a CNN directly on cleaned EEG signals and an MLP on 
+              FFT-derived bandpower features across delta, theta, alpha, and beta bands. The CNN achieved 18.9% accuracy (F1: 0.18) 
+              while the MLP reached 12.4% (F1: 0.10), confirming that learning spatial-temporal patterns from cleaned raw signals 
+              outperforms handcrafted frequency features, though both remain well above chance (10%) on this notoriously difficult dataset. 
+              These results demonstrate that rigorous artifact removal meaningfully improves EEG decoding feasibility, 
+              while pointing to model architecture improvements, <mark> data augmentation, and larger multi-subject datasets </mark>
+              as the most promising avenues for pushing classification accuracy further.
+
+
+
+
   skill:
     title: Skills
     panelId: skill-panel
