@@ -1,13 +1,13 @@
 ---
-title: "User Behavior Tracking Technical stacks"
+title: "User Behavior Tracking System: Overview"
 date: 2026-04-05
-tags: ["user-behavior", "msgpack"]
-categories: ["engineering"]
+tags: ["user-behavior"]
+categories: ["engineering", "research"]
 description: "This blog describe the process of building a user behavior tracking system, which is a crucial component for data-driven decision making in modern applications. The blog will cover the technical stacks used in the implementation, including data collection, storage, and analysis."
 draft: true
 ---
 
-## User Behavior Tracking System Overview
+## User Behavior Tracking System: Overview
 
 The overall user behavior tracking system consists of four main components: 
 - 01 Data Collection
@@ -25,14 +25,12 @@ Common sampling methods include fixed data point (Khan et al, 2024), e.g 5 data 
 
 *Our method & rationale*: 
 <br>
-The collected data columns can be represented as a nested JSON structure, where:
+The collected data columns can be represented rows of raw data, which include x, y, timestamp, event name, and element (which html element is the user on)
 
-- The outer keys correspond to the event type (e.g., mouse move, click, scroll).
-- The inner objects (or arrays) contain the fixed pixel changes recorded under that specific event type (x, y, timestamp, event name, extra) 
+This design implements a fixed pixel size sampling, indicating we sample when the changes in x, y value of mouse position exceeds 1 pixel. 
 
-Note that event type and event name are different. For example, event type can be "PC", representing point and click, while event name can be "Point" or "Click". For common event types, please refer to Khan et al, 2024.
+For detailed description of which event we are listening to and how we implement the data collection, please refer to this article: [User Behavior Tracking Data Collection](../user_behavior_tracking_data_collection).
 
-This design implements a hybrid sampling strategy that combines fixed time-interval sampling with event-based sampling. As a result, it is more efficient than fixed-data-point sampling and captures significantly more user interactions than pure fixed time-interval sampling alone.
 
 ---
 
