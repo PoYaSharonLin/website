@@ -4,7 +4,7 @@ date: 2026-04-05
 tags: ["user-behavior"]
 categories: ["engineering", "research"]
 description: "This blog describe the process of building a user behavior tracking system, which is a crucial component for data-driven decision making in modern applications. The blog will cover the technical stacks used in the implementation, including data collection, storage, and analysis."
-draft: true
+draft: false
 ---
 
 ## User Behavior Tracking System: Overview

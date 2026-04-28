@@ -145,12 +145,12 @@ params:
     icon: fas fa-book
     list:
       - title: "Hybrid Electric Vehicle Sales Prediction using ANN, ANFIS, and E-Word-of-Mouth"
-        url: "https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"
+        # url: "https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"
         logo: https://web.ncku.edu.tw/var/file/0/1000/img/1215/ncku-logo1.jpg
         description: |
           *Period:* 2023/07/01 to 2024/02/29 (8 months)
 
-          *National Science and Technology Council (NSTC) Project Number:* NSTC 112-2813-C-006-026-H 2
+          *National Science and Technology Council (NSTC) Project Number:* NSTC 112-2813-C-006-026-H
 
           *Summary:*
 
@@ -175,7 +175,7 @@ params:
     title: Projects
     icon: fas fa-project-diagram
     sections:
-      - section: Textual Analysis
+      - section: Sentiment Analysis
         list:
           - title: Electronic Direct Mail Precision Marketing
             # url: "https://drive.google.com/file/d/1ZYTvsvyhrtboKDprvE_tktB-VFKohbBz/view?usp=sharing"
@@ -201,7 +201,7 @@ params:
               if integrated into the campaign workflow before emails are sent.
           
           - title: Micron Summer Internship, Business Planning Intern
-            url: https://github.com/PoYaSharonLin/BPMia
+            # url: https://github.com/PoYaSharonLin/BPMia
             logo: https://tw.micron.com/content/dam/micron/connectedassets/micron/global/logos/micron-logo-black-tm-rgb.png
             description:  |1-
               *Period:* 2025/07/01 to 2025/08/31 (2 months)
@@ -228,7 +228,7 @@ params:
 
 
 
-      - section: Image Analysis
+      - section: Computer Vision
         list:
           - title: Satellite Cloud Image prediction using ConvLSTM
             url: "https://drive.google.com/file/d/1sH8mLJBQgHYu6ajCrAUo0TlqGPwIRViq/view"
