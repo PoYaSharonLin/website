@@ -101,8 +101,7 @@ params:
         college: National Tsing Hua University, Taiwan
         dates: 2024 - Present
         logo: https://www.nthu.edu.tw//public/images/about10/cis-1-1.jpg
-        thesis_title: "Reducing Misreporting of Health Information through Novel Positive Appeals. Evidence from Mouse-Tracking Recognition"
-        # thesis_url: "#"
+        thesis_title: Reducing Misreporting of Health Information through Novel Positive Appeals. Evidence from Mouse-Tracking Recognition        # thesis_url: "#"
         description:
       - degree: Exchange Student in Department of Technology Management
         college: Technical University of Munich, Germany
@@ -116,7 +115,7 @@ params:
         college: National Cheng Kung University, Taiwan
         dates: 2019 - 2024
         logo: https://web.ncku.edu.tw/var/file/0/1000/img/1215/ncku-logo1.jpg
-        thesis_title: "Hybrid Electric Vehicle Sales Prediction: Using ANN, ANFIS, and Electronic Word of Mouth"
+        thesis_title: Hybrid Electric Vehicle Sales Prediction: Using ANN, ANFIS, and Electronic Word of Mouth
         # thesis_url: "https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"
         description: |
 
@@ -146,10 +145,11 @@ params:
     list:
       - title: Reducing Misreporting of Health Information through Novel Positive Appeals
         url: https://drive.google.com/file/d/1dluTYVC6HBg8Wlnnb0BkMhz70wR0YQmT/view?usp=sharing
-        logo: https://tswim2026.ctm.nthu.edu.tw/assets/img/tswim-logo-white-transparent.png
+        logo: https://www.nthu.edu.tw//public/images/about10/cis-1-1.jpg
         description: |
-          *Status:* Accepted 
-          *Track:* Work-in-Progress Track
+          *Status:* TSWIM 2026 Accepted 
+
+          *Track:* Research Incubator Track
 
       - title: "Hybrid Electric Vehicle Sales Prediction using ANN, ANFIS, and E-Word-of-Mouth"
         # url: "https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"
