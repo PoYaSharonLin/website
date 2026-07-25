@@ -144,6 +144,13 @@ params:
     title: Research
     icon: fas fa-book
     list:
+      - title: Reducing Misreporting of Health Information through Novel Positive Appeals
+        url: https://drive.google.com/file/d/1dluTYVC6HBg8Wlnnb0BkMhz70wR0YQmT/view?usp=sharing
+        logo: https://tswim2026.ctm.nthu.edu.tw/assets/img/tswim-logo-white-transparent.png
+        description: |
+          *Status:* Accepted 
+          *Track:* Work-in-Progress Track
+
       - title: "Hybrid Electric Vehicle Sales Prediction using ANN, ANFIS, and E-Word-of-Mouth"
         # url: "https://drive.google.com/file/d/1kPSxWki2qHDU6GOjUp6GFk7taJx2MCSV/view?usp=sharing"
         logo: https://web.ncku.edu.tw/var/file/0/1000/img/1215/ncku-logo1.jpg

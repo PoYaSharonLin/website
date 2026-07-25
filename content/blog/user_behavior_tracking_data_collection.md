@@ -94,6 +94,15 @@ Below is the table of events we are listening to when respondents are moving the
 2. `mousemove` v.s. `pointermove`
    Since `input` and `change` does not have the `.clientX` and `.clientY` function to track the location, the `pointermove` event provides real-time coordinates for the `input` and `change` records. Thus, this would not overlap with the use of `mousemove` event. Think of the example that the input event will be `{input, null, null, timestamp, drag, value}` but now with `{input, x, y, timestamp, drag, value}` with the help of `pointermove` event. `mousemove` on the other hand, tracks the pointer trajectory between the multiple times of `input` events as respondents revise their answer while dragging the slider.
 
+## STEP 3: Define the data structure 
+(how the rows gonna look like e.g x, y position of mouse, timestamp, event name, element name)
+This is a rather minor step. The data structure can be defined in which ever way that suit you and whichever naming convention that you prefer, e.g. kebab, snake, camel etc. However, if you expect that your data structure will be changed constantly and you have the need of conducting data serialization, it is better to opt for MsgPack rather than Protobuf, since the former does not require developer to define a fixed schema. For more infromation about the comparison between MsgPack and Protobuf, please refer to this article: [Protobuf vs MessagePack](../protobuf-vs-msgpack).
+
+## STEP 4: Revisit event listener logic and data collected to make sure we can do analysis on that 
+
+## STEP 5: Upload the data to the server for storage and analysis
+
+
 ## References:
 
 Hostetter, A. B., & Alibali, M. W. (2008). Visible embodiment: Gestures as simulated action. *Psychonomic bulletin & review, 15*(3), 495-514.
