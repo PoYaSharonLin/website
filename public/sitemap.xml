@@ -2,35 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:8000/website/blog/</loc>
+    <loc>https://poyasharonlin.github.io/website/blog/</loc>
+    <lastmod>2026-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://poyasharonlin.github.io/website/</loc>
+    <lastmod>2026-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://poyasharonlin.github.io/website/categories/</loc>
+    <lastmod>2026-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://poyasharonlin.github.io/website/categories/engineering/</loc>
+    <lastmod>2026-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://poyasharonlin.github.io/website/categories/research/</loc>
+    <lastmod>2026-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://poyasharonlin.github.io/website/tags/</loc>
+    <lastmod>2026-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://poyasharonlin.github.io/website/blog/user_behavior_tracking_data_collection/</loc>
+    <lastmod>2026-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://poyasharonlin.github.io/website/tags/user-behavior/</loc>
+    <lastmod>2026-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://poyasharonlin.github.io/website/tags/msgpack/</loc>
     <lastmod>2026-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8000/website/</loc>
+    <loc>https://poyasharonlin.github.io/website/blog/protobuf-vs-msgpack/</loc>
     <lastmod>2026-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8000/website/categories/</loc>
+    <loc>https://poyasharonlin.github.io/website/blog/user_behavior_tracking/</loc>
     <lastmod>2026-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8000/website/categories/engineering/</loc>
-    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:8000/website/tags/msgpack/</loc>
-    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:8000/website/blog/protobuf-vs-msgpack/</loc>
-    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:8000/website/tags/</loc>
-    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:8000/website/tags/user-behavior/</loc>
-    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:8000/website/search/</loc>
+    <loc>https://poyasharonlin.github.io/website/search/</loc>
     <lastmod>2024-10-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8000/website/project/</loc>
+    <loc>https://poyasharonlin.github.io/website/project/</loc>
   </url><url>
-    <loc>http://localhost:8000/website/research/</loc>
+    <loc>https://poyasharonlin.github.io/website/research/</loc>
   </url>
 </urlset>

@@ -101,8 +101,8 @@ params:
         college: National Tsing Hua University, Taiwan
         dates: 2024 - Present
         logo: https://www.nthu.edu.tw//public/images/about10/cis-1-1.jpg
-        thesis_title: "Reducing Misreporting of Health Information through Novel Positive Appeals. Evidence from Mouse-Tracking Recognition"        
-        # thesis_url: "#"
+        thesis_title: "Reducing Misreporting of Health Information through Novel Positive Appeals. Evidence from Mouse-Tracking Recognition"
+        thesis_url: "files/thesis.pdf"
         description:
       - degree: Exchange Student in Department of Technology Management
         college: Technical University of Munich, Germany
@@ -145,7 +145,7 @@ params:
     icon: fas fa-book
     list:
       - title: Reducing Misreporting of Health Information through Novel Positive Appeals
-        url: https://drive.google.com/file/d/1dluTYVC6HBg8Wlnnb0BkMhz70wR0YQmT/view?usp=sharing
+        url: files/tswim-2026-extended-abstract.pdf
         logo: https://www.nthu.edu.tw//public/images/about10/cis-1-1.jpg
         description: |
           *Status:* TSWIM 2026 Accepted 

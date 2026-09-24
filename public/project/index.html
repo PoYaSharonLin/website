@@ -31,7 +31,7 @@
   
     
   
-  <link href="/website/main.min.ae1de1268908ab7a966b3060402fe0a3441954ff84ccdd744d1663c0971ff628.css" rel="stylesheet" />
+  <link href="/website/main.min.2146263d0f158393eaa836056629ca4619b2f235bf092b6c7b7f35eb8ec0ef9b.css" rel="stylesheet" />
 
   <script>
     let html = document.querySelector("html");
@@ -78,7 +78,7 @@
     <header class="border-b border-slate-200 dark:border-slate-700 mb-8">
   <nav class="max-w-7xl mx-auto px-8 py-4 flex flex-row items-center justify-between">
     <div class="flex flex-wrap gap-1">
-      <a class="nav-link text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white" href="http://localhost:8000/website/">Home</a>
+      <a class="nav-link text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white" href="https://poyasharonlin.github.io/website/">Home</a>
       <a class="nav-link text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white" href="/website/research">Research</a>
       <a class="nav-link text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white" href="/website/project">Projects</a>
       <a class="nav-link text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white" href="/website/files/cv.pdf">CV</a>
@@ -122,28 +122,107 @@
 <div class="max-w-7xl mx-auto px-8 py-12 text-slate-700 dark:text-slate-200">
   <h1 class="text-3xl font-bold mb-6 border-b border-slate-300 dark:border-slate-600 pb-2">Projects</h1>
   
-<h3 class="text-lg font-semibold text-slate-700 dark:text-slate-200 mt-6 mb-3">Textual Analysis</h3>
+<h3 class="text-xl md:text-2xl font-semibold text-slate-700 dark:text-slate-200 mt-6 mb-3">Sentiment Analysis</h3>
 
 <div class="entry-item">
-  <h4 class="entry-title">
-    <a href="" class="text-blue-700 hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300">Electronic Direct Mail Precision Marketing</a>
+  <h4 class="entry-title flex items-center gap-2">
+    <img src="https://cw-static.kdan.com/preparing/5494b79cde2e414a95177b63de8ef1b7/c9e64fa6-ef03-4bd9-b3b3-d093cfc840dc/preparing/infra/KDAN%20Vertical%20Color%20Primary_RGB.svg" alt="" class="inline-block h-6 w-6 object-contain">
+    Electronic Direct Mail Precision Marketing
   </h4>
-  <p class="entry-description text-slate-600 dark:text-slate-300 indent-4"><p>• Utilized XGBoost to predict subscription likelihood based on user information and behavior. <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p>• Used SMOTE to handle data imbalance. <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p>• Leveraged <strong>BERT</strong> to assess the likelihood of an <strong>email subject</strong> line leading to an unsubscription. <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+  <p class="entry-description text-slate-600 dark:text-slate-300 indent-4"><p><em>Period:</em> 2022/02 to 2022/06 (5 months)</p>
+<p><em>Unit:</em> Software Development Club, National Cheng Kung University &amp; Kdan Mobile</p>
+<p><em>Summary:</em></p>
+<p>Email marketing team face a persistent challenge in reducing subscriber churn,
+yet most approaches rely on intuition rather than data-driven insight into
+what specific content patterns actually trigger unsubscribes.
+The team analyzed EDM (Electronic Direct Mail) campaign data by combining three methods:
+<mark> frequency-based context analysis </mark> to identify high-risk subject line patterns,
+<mark> a Logistic Regression and XGBoost model </mark> using subscriber attributes (app, email domain, spam complaint history)
+to predict unsubscribe likelihood, and a BERT text classification model to score any new subject line&rsquo;s churn risk before sending.
+The <mark> context analysis revealed that recurring templates such as &ldquo;Tips of [Month],&rdquo; &ldquo;Tips &amp; Tricks,&rdquo; discount-heavy exclamation-point subject lines, and &ldquo;New + !&rdquo;
+announcements were disproportionately associated with unsubscribes </mark>, while the XGBoost model achieved 85% accuracy and the BERT model reached 93% F1-score even
+when trained on only 20,000 records. Together, these tools give content creators actionable guardrails —
+both a set of subject line templates to avoid and a real-time scoring system — that could meaningfully reduce unsubscribe rates
+if integrated into the campaign workflow before emails are sent.</p>
+</p>
+</div>
+
+<div class="entry-item">
+  <h4 class="entry-title flex items-center gap-2">
+    <img src="https://tw.micron.com/content/dam/micron/connectedassets/micron/global/logos/micron-logo-black-tm-rgb.png" alt="" class="inline-block h-6 w-6 object-contain">
+    Micron Summer Internship, Business Planning Intern
+  </h4>
+  <p class="entry-description text-slate-600 dark:text-slate-300 indent-4"><p><em>Period:</em> 2025/07/01 to 2025/08/31 (2 months)</p>
+<p><em>Unit:</em> Project Management Office, Micron Inc, Taiwan.</p>
+<p><em>Summary:</em></p>
+<p>Business planning teams at semiconductor companies like Micron face a fragmented workflow —
+production forecasting data, internal documentation, and personal task tracking are typically
+siloed across separate tools, forcing employees to context-switch constantly and
+making it hard to surface relevant internal resources quickly.
+BPMia, built during a summer internship under Micron Taiwan&rsquo;s Project Management Office,
+addresses this by combining three capabilities into a single Streamlit web app:
+<mark> interactive wafer production forecasting visualization </mark>, a <mark> Retrieval-Augmented Generation (RAG) agent </mark>
+powered by Google Gemini that answers questions grounded in internal documents,
+and a <mark> personal action items tracker </mark>. The result is a unified internal productivity tool that lets
+business planners query production trends, locate internal portals and
+resources through natural language, and manage follow-up tasks — all within one interface.
+While the project is scoped as an intern prototype rather than a production system,
+its architecture — <mark> modular pages </mark>, and <mark> document ingestion pipelines </mark>
+— provides a reusable foundation that future teams could extend with additional data
+sources or tighter integration into Micron&rsquo;s existing planning infrastructure.</p>
 </p>
 </div>
 
 
-<h3 class="text-lg font-semibold text-slate-700 dark:text-slate-200 mt-6 mb-3">Image Analysis</h3>
+<h3 class="text-xl md:text-2xl font-semibold text-slate-700 dark:text-slate-200 mt-6 mb-3">Computer Vision</h3>
 
 <div class="entry-item">
-  <h4 class="entry-title">
-    <a href="https://drive.google.com/file/d/1sH8mLJBQgHYu6ajCrAUo0TlqGPwIRViq/view" class="text-blue-700 hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300">Satellite Cloud Image prediction using ConvLSTM</a>
+  <h4 class="entry-title flex items-center gap-2">
+    <img src="https://web.ncku.edu.tw/var/file/0/1000/img/1215/ncku-logo1.jpg" alt="" class="inline-block h-6 w-6 object-contain">
+    
+      <a href="https://drive.google.com/file/d/1sH8mLJBQgHYu6ajCrAUo0TlqGPwIRViq/view" class="text-blue-700 hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300">Satellite Cloud Image prediction using ConvLSTM</a>
+    
   </h4>
-  <p class="entry-description text-slate-600 dark:text-slate-300 indent-4"><p>• Applied <strong>ConvLSTM to predict the movement of the infrared cloud image</strong> and used MAE, MSE, SSIM, PSNR as performance evaluation. <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p>• Compared to ConLSTM, Self-attention LSTM may not be as effective as expected due to the characteristics of cloud cluster movement. <!-- raw HTML omitted --><!-- raw HTML omitted -->
-(only moves around one specific local area at 10-minute intervals.) <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+  <p class="entry-description text-slate-600 dark:text-slate-300 indent-4"><p><em>Period:</em> 2022/02 to 2022/06 (5 months)</p>
+<p><em>Unit:</em> Department of Geomatics, National Cheng Kung University</p>
+<p><em>Summary:</em></p>
+<p>Accurate short-term prediction of satellite cloud imagery is critical for weather forecasting,
+yet generating reliable future frames from spatiotemporal sequences remains a challenging deep learning problem.
+The team framed cloud movement as a spatiotemporal sequence prediction task and trained a <mark> ConvLSTM model </mark>—
+along with a <mark> Self-Attention-ConvLSTM variant </mark>  — on two distinct datasets from the Himawari-8 satellite:
+Japan visible channel images and Taiwan infrared channel images, then systematically compared three loss functions
+(MSE, MAE, and SSIM) across four evaluation metrics (MSE, MAE, SSIM, and PSNR). ConvLSTM consistently outperformed
+Self-Attention-ConvLSTM in both visual quality and quantitative metrics, and while all three loss functions
+successfully captured the general direction of cloud movement in the Japan visible channel dataset,
+none dominated across all four evaluations — and the models <mark> struggled more noticeably with the Taiwan infrared channel data </mark>,
+where cloud movement trends were harder to learn. These findings suggest that loss function selection should be matched to
+the specific evaluation criterion and image type of interest, and that the added <mark>complexity of self-attention does not
+automatically improve spatiotemporal cloud prediction</mark>, pointing to the need for more targeted architectural choices
+depending on the satellite channel and geographic region.</p>
+</p>
+</div>
+
+<div class="entry-item">
+  <h4 class="entry-title flex items-center gap-2">
+    <img src="https://www.nthu.edu.tw//public/images/about10/cis-1-1.jpg" alt="" class="inline-block h-6 w-6 object-contain">
+    
+      <a href="https://github.com/PoYaSharonLin/MNISTMindBigData" class="text-blue-700 hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300">MNISTMindBigData</a>
+    
+  </h4>
+  <p class="entry-description text-slate-600 dark:text-slate-300 indent-4"><p><em>Period:</em> 2025/02 to 2025/06 (5 months)</p>
+<p><em>Unit:</em> Institute of Information Systems and Applications, National Tsing Hua University</p>
+<p><em>Summary:</em></p>
+<p>Classifying EEG signals into digit categories is an open problem in Brain-Computer Interface research —
+prior work on the MindBigData dataset has reported accuracies as low as 10–17%, largely due to <mark> high noise,
+low signal-to-noise ratio, and insufficient artifact removal </mark>. The project applied a multi-stage preprocessing pipeline
+— <mark> bandpass filtering (1–40 Hz), Artifact Subspace Reconstruction (ASR), and Independent Component Analysis (ICA) </mark>
+— to the 64,344-trial MindBigData-EP dataset, then trained both a CNN directly on cleaned EEG signals and an MLP on
+FFT-derived bandpower features across delta, theta, alpha, and beta bands. The CNN achieved 18.9% accuracy (F1: 0.18)
+while the MLP reached 12.4% (F1: 0.10), confirming that learning spatial-temporal patterns from cleaned raw signals
+outperforms handcrafted frequency features, though both remain well above chance (10%) on this notoriously difficult dataset.
+These results demonstrate that rigorous artifact removal meaningfully improves EEG decoding feasibility,
+while pointing to model architecture improvements, <mark> data augmentation, and larger multi-subject datasets </mark>
+as the most promising avenues for pushing classification accuracy further.</p>
 </p>
 </div>
 

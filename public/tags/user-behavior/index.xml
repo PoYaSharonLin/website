@@ -2,18 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>user-behavior on </title>
-    <link>http://localhost:8000/website/tags/user-behavior/</link>
+    <link>https://poyasharonlin.github.io/website/tags/user-behavior/</link>
     <description>Recent content in user-behavior on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/website/tags/user-behavior/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://poyasharonlin.github.io/website/tags/user-behavior/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>User Behavior Tracking System: Data Collection</title>
+      <link>https://poyasharonlin.github.io/website/blog/user_behavior_tracking_data_collection/</link>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://poyasharonlin.github.io/website/blog/user_behavior_tracking_data_collection/</guid>
+      <description>User Behavior Tracking System: Data Collection From the previous blog, we have an overview of the user behavior tracking system, which consists of four main components: data collection, data processing, data storage, and data analysis. In this blog, we will dive into the details of the first component: data collection.
+Before we start, let&amp;rsquo;s briefly recall how to track user behavior from frontend UI interface. We can use javascript event listeners to capture user interactions such as mouse movements, clicks, scrolls, and keyboard inputs.</description>
+    </item>
+    
     <item>
       <title>Protobuf vs MessagePack: A Comparison of Data Serialization Formats</title>
-      <link>http://localhost:8000/website/blog/protobuf-vs-msgpack/</link>
+      <link>https://poyasharonlin.github.io/website/blog/protobuf-vs-msgpack/</link>
       <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/website/blog/protobuf-vs-msgpack/</guid>
-      <description>User Behavior Tracking System Overview The overall user behavior tracking system consists of three main components:
+      <guid>https://poyasharonlin.github.io/website/blog/protobuf-vs-msgpack/</guid>
+      <description>Protobuf v.s. MsgPack Protobuf is a language-neutral, platform-neutral, and extensible mechanism for serializing structured data. It offers excellent efficiency in both size and speed compared to JSON or XML. However, it requires a predefined schema and code generation for serialization/deserialization. This adds significant complexity whenever we need to add or modify columns in our nested event-based data structure.
+In contrast, MessagePack provides simple, schema-less serialization functions that work directly with native data structures (such as nested dictionaries).</description>
+    </item>
+    
+    <item>
+      <title>User Behavior Tracking System: Overview</title>
+      <link>https://poyasharonlin.github.io/website/blog/user_behavior_tracking/</link>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://poyasharonlin.github.io/website/blog/user_behavior_tracking/</guid>
+      <description>User Behavior Tracking System: Overview The overall user behavior tracking system consists of four main components:
  01 Data Collection 02 Data Processing 03 Data Storage 04 Data Analysis   01 Data Collection: This component is responsible for capturing user interactions and events Common Sampling Methods: Common sampling methods include fixed data point (Khan et al, 2024), e.g 5 data pts for 1 window regardless of time duration , fixed time interval (Khan et al, 2024 &amp;amp; Mazza at al, 2020), e.</description>
     </item>
     

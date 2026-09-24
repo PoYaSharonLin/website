@@ -11,7 +11,7 @@
 {{ if .thesis_url }}
 <p>
   Thesis:
-  <a href="{{ .thesis_url }}"><i>{{ .thesis_title }}</i></a>
+  <a href="{{ .thesis_url | relURL }}"><i>{{ .thesis_title }}</i></a>
 </p>
 {{ else }}
 <p>
