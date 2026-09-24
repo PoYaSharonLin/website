@@ -6,3 +6,8 @@ assets/style.css
 hugo_stats.json
 .hugo_build.lock
 
+# Leftover root-owned copy of the old static/files; local only, cannot be
+# deleted without sudo. Safe to remove once permissions are fixed.
+static/files_rootold/
+public/files_rootold/
+
